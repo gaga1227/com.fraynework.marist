@@ -1,3 +1,104 @@
 /* ==========================================================================
    anim - ANGULAR
    ========================================================================== */
+   
+/* -------------------------------------------------------------------------- */
+/* nav */
+.navItem {
+	/*transition*/
+	/*-webkit-transform:translate3d(0,0,0);*/
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out; }
+/*start*/
+.navItem.current-add,
+.navItem.current-remove-active 	{ background:transparent; }
+/*end*/
+.navItem.current,
+.navItem.current-add-active,
+.navItem.current-remove			{ background:#f2f2f2; }		
+
+
+/* -------------------------------------------------------------------------- */
+/* view anim prep */
+.view { 
+	position:absolute; top:0; bottom:0; left:0; right:0;
+	/*transition*/
+	/*-webkit-transform:translate3d(0,0,0);*/
+	-webkit-transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-o-transition:all 0.3s ease-in-out;
+	transition:all 0.3s ease-in-out;
+}
+
+/* view anim start */
+.view.ng-enter { 
+	opacity:0;
+	/*transform*/
+	-webkit-transform:translate3d(100%,0,0);
+	-moz-transform:translate3d(100%,0,0);
+	-ms-transform:translate3d(100%,0,0);
+	-o-transform:translate3d(100%,0,0);
+	transform:translate3d(100%,0,0); }
+.view.ng-leave { 
+	opacity:1;
+	/*transform*/
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0); }
+	
+/* view anim end */
+.view.ng-enter.ng-enter-active { 
+	opacity:1;
+	/*transform*/
+	-webkit-transform:translate3d(0,0,0);
+	-moz-transform:translate3d(0,0,0);
+	-ms-transform:translate3d(0,0,0);
+	-o-transform:translate3d(0,0,0);
+	transform:translate3d(0,0,0); }
+.view.ng-leave.ng-leave-active { 
+	opacity:0;
+	/*transform*/
+	-webkit-transform:translate3d(-100%,0,0);
+	-moz-transform:translate3d(-100%,0,0);
+	-ms-transform:translate3d(-100%,0,0);
+	-o-transform:translate3d(-100%,0,0);
+	transform:translate3d(-100%,0,0); }	
+
+/* -------------------------------------------------------------------------- */
+/* list anim */
+.list { 
+	/*pre-set to avoid css glitch*/
+	max-height:100px;
+	/*transition*/
+	-webkit-transition:all 0.6s ease-in-out;
+	-moz-transition:all 0.6s ease-in-out;
+	-o-transition:all 0.6s ease-in-out;
+	transition:all 0.6s ease-in-out; }
+
+/* list anim start */
+.list.ng-enter { opacity:0; max-height:0; }
+.list.ng-leave { opacity:1; max-height:100px; }
+.list.ng-move { opacity:0.3; background:ffff00; }
+	
+/* list anim end */
+.list.ng-enter.ng-enter-active { opacity:1; max-height:100px; }
+.list.ng-leave.ng-leave-active { opacity:0; max-height:0; }	
+.list.ng-move.ng-move-active { opacity:1; background:transparent; }	
+
+/* staggering */
+.list.ng-enter-stagger,
+.list.ng-leave-stagger,
+.list.ng-move-stagger {
+	-webkit-transition-delay:0.05s;
+	-moz-transition-delay:0.05s;
+	-o-transition-delay:0.05s;
+	transition-delay:0.05s;
+	/* this is here to avoid accidental CSS inheritance */
+	-webkit-transition-duration:0;
+	-moz-transition-duration:0;
+	-o-transition-duration:0;
+	transition-duration:0; }

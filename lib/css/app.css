@@ -60,7 +60,7 @@ body {
 
 /* pageBg */
 .pageBg {
-	background:#ffc423 url(../img/brand-bg.png) center top no-repeat; background-size:cover; }
+	background:#383836 center top no-repeat; background-size:cover; }
 
 /* page */
 .page {
@@ -70,27 +70,6 @@ body {
 	-moz-transition:-moz-transform 0.3s ease-in-out;
 	-o-transition:-o-transform 0.3s ease-in-out;
 	transition:transform 0.3s ease-in-out; }
-
-/* interaction */
-.page.currentPage {
-	z-index:10000; }
-
-/* interaction - menu */
-.page.currentPage.menuActive {
-	/*transform*/
-	-webkit-transform:translate(83%,0);
-	-moz-transform:translate(83%,0);
-	-ms-transform:translate(83%,0);
-	-o-transform:translate(83%,0);
-	transform:translate(83%,0); }
-#pgMenu {
-	width:84%;
-	/*transform*/
-	-webkit-transform:translate(0,0)!important;
-	-moz-transform:translate(0,0)!important;
-	-ms-transform:translate(0,0)!important;
-	-o-transform:translate(0,0)!important;
-	transform:translate(0,0)!important; }
 	
 
 /* ==========================================================================
@@ -280,8 +259,8 @@ body {
 
 /* title/logo/crest */
 .brandTitle {
-	display:block; width:270px; height:75px; margin:0 auto; padding:0; overflow:hidden;
-	background:url(../img/brand-title.png) center center no-repeat; background-size:contain; }
+	display:block; width:100%; height:100px; margin:0 auto; padding:0; overflow:hidden;
+	background:#050505; }
 
 /* collage/artwork */
 .brandImage {
@@ -406,7 +385,7 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 .menuList {
-	position:absolute; top:123px; left:0; bottom:0; width:100%; height:auto; margin:0; padding:0; overflow:hidden; }
+	position:absolute; top:100px; left:0; bottom:0; width:100%; height:auto; margin:0; padding:0; overflow:hidden; }
 
 	/* -------------------------------------------------------------------------- */
 	/* title */
@@ -423,7 +402,7 @@ body {
 	/* -------------------------------------------------------------------------- */
 	/* scroller */
 	.menuList > .scroller {
-		position:absolute; top:50px; left:0; bottom:0px; width:100%; }
+		position:absolute; top:0; left:0; bottom:0px; width:100%; }
 
 	/* -------------------------------------------------------------------------- */
 	/* menuItems */
@@ -434,7 +413,7 @@ body {
 		/* menuItem */
 		.menuList .menuItem {
 			display:block; position:relative; width:100%; height:42px; margin:0; padding:0 15px; overflow:hidden;
-			color:#777; background:transparent; border-top:1px solid #333; border-bottom:1px solid rgba(0,0,0,0.5);
+			color:#ccc; background:transparent; border-top:1px solid #222;
 			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 			/* icon */
@@ -448,9 +427,9 @@ body {
 
 			/* label */
 			.menuList .menuItems .label {
-				display:inline-block; width:auto; height:auto; margin:0 15px; padding:0; overflow:hidden;
+				display:inline-block; width:auto; height:auto; margin:0; padding:0; overflow:hidden;
 				white-space:nowrap; text-overflow:ellipsis; vertical-align:middle;
-				font-family:'Montserrat',sans-serif; font-size:11px; font-weight:700; line-height:42px; text-align:center; }
+				font-weight:700; line-height:42px; text-align:center; }
 
 		/* interaction */
 		.menuList .menuItem.active { background:#ffc423; border-color:#ffc423; }
