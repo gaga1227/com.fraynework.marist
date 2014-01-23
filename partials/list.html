@@ -1,8 +1,11 @@
 <div id="pg{{sectionID | capitalize}}" data-role="page" class="page">
 	<div class="pageHeader" data-role="header">
 		<span class="headerTitle" data-ng-class="{small:categoryID}">
-			<span class="secID">{{sectionID}}</span><br data-ng-show="categoryID">
+			<span class="secID" data-ng-class="{hasFilter:hasCategories}"><span class="label">{{sectionID}}<i class="icon icon-caret-down" data-ng-show="hasCategories"></i></span></span>
 			<span class="cateID" data-ng-show="categoryID">{{categoryID}}</span>
+			<select data-ng-show="hasCategories" data-ng-model="currentFilter" data-ng-change="filterList()">
+				<option data-ng-repeat="category in categories">{{category[$index-1]}}</option>
+			</select>
 		</span>
 		<a href="#menu" class="headerBtn headerIconRight btnMenu" data-role="button"><i class="icon icon-reorder"></i></a>
 	</div>
