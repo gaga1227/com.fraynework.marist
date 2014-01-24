@@ -9,4 +9,22 @@
 		</span>
 		<a href="#menu" class="headerBtn headerIconRight btnMenu" data-role="button"><i class="icon icon-reorder"></i></a>
 	</div>
+	<div class="pageContent" data-role="content">
+		<div class="scroller" data-role="scroller" ng-iscroll ng-iscroll-delay="500">
+			<div data-role="scrollerContent">
+				<div id="list{{sectionID | capitalize}}" class="list" data-role="list" data-ng-repeat="entry in entries | filter:listFilter | orderBy:'date'"> 
+					<a href="#sec-{{sectionID}}/article-{{entry.articleID}}" class="item" data-ng-class="sectionID" data-role="button">
+						<div class="dateBlock">
+							<span class="d">{{entry.date | date:'d'}}<span data-ng-show="{{entry.date | date:'d'}}!={{entry.dateEnd | date:'d'}}">-{{entry.dateEnd | date:'d'}}</span></span>
+							<span class="m">{{entry.date | date:'MMM'}}</span>
+						</div>
+						<div class="content" data-ng-class="{hasIcon: entry.cate == 'Staff Programmes'}">
+							<p class="title"><sup class="debug">{{$index}}</sup> {{entry.title | limitTo:50}}</p>
+						</div>
+						<i class="icon icon-link" data-ng-show="entry.cate == 'Staff Programmes'"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
