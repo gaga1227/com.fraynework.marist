@@ -10,22 +10,35 @@
 		<a href="#menu" class="headerBtn headerIconRight btnMenu" data-role="button"><i class="icon icon-reorder"></i></a>
 	</div>
 	<div class="pageContent" data-role="content">
-		<div class="scroller" data-role="scroller" ng-iscroll ng-iscroll-delay="500">
-			<div data-role="scrollerContent">
+		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800" >
+			<div data-role="scrollerContent" data-ng-if="!hasArticle">
+				<a 	class="item" data-role="button"
+					href="{{entry.link}}" data-link="external"
+					data-ng-class="sectionID"
+					data-ng-repeat="entry in entries | filter:listFilter | orderBy:order">
+					<div class="content hasIcon">
+						<p class="title"><sup class="debug">{{$index}}:{{entry.articleID}}</sup> {{entry.title | limitTo:50}}</p>
+					</div>
+					<i class="icon icon-circle-arrow-down" data-ng-show="sectionID == 'publications'"></i>
+					<i class="icon icon-circle-arrow-right" data-ng-show="sectionID == 'links'"></i>
+				</a>
+			</div>
+			<div data-role="scrollerContent" data-ng-if="hasArticle">
 				<a 	class="item" data-role="button"
 					href="#sec-{{sectionID}}/article-{{entry.articleID}}"
 					data-ng-class="sectionID"
-					data-ng-repeat="entry in entries | filter:listFilter | orderBy:'date'">
+					data-ng-repeat="entry in entries | filter:listFilter | orderBy:order">
 					<div class="dateBlock">
 						<span class="d">{{entry.date | date:'d'}}<span data-ng-show="{{entry.date | date:'d'}}!={{entry.dateEnd | date:'d'}}">-{{entry.dateEnd | date:'d'}}</span></span>
 						<span class="m">{{entry.date | date:'MMM'}}</span>
 					</div>
 					<div class="content" data-ng-class="{hasIcon: entry.cate == 'Staff Programmes'}">
-						<p class="title"><sup class="debug">{{$index}}</sup> {{entry.title | limitTo:50}}</p>
+						<p class="title"><sup class="debug">{{$index}}:{{entry.articleID}}</sup> {{entry.title | limitTo:50}}</p>
 					</div>
 					<i class="icon icon-link" data-ng-show="entry.cate == 'Staff Programmes'"></i>
 				</a>
 			</div>
+			<div class="acenter" data-ng-show="!(entries | filter:listFilter).length"><h3>No current record in this category</h3></div>
 		</div>
 	</div>
 </div>

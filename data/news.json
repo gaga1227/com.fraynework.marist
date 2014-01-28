@@ -1,0 +1,44 @@
+[
+	{ 
+		"title": 	"Christmas Blessings",
+		"date":		"2013-12-23T09:30:00.000Z",
+		"dateEnd":	"2013-12-23T09:30:00.000Z",
+		"articleID":"n101",
+		"cate":		"2013"
+	},
+	{ 
+		"title": 	"Marist Advent Reflection Booklet",
+		"date":		"2013-11-01T09:30:00.000Z",
+		"dateEnd":	"2013-11-01T09:30:00.000Z",
+		"articleID":"n102",
+		"cate":		"2013"
+	},
+	{ 
+		"title": 	"Pink Lightning! – A New Initiative by Marist Youth Care to Support at-Risk Young Women",
+		"date":		"2013-10-17T09:30:00.000Z",
+		"dateEnd":	"2013-10-17T09:30:00.000Z",
+		"articleID":"n103",
+		"cate":		"2013"
+	},
+	{
+		"title": 	"Inauguration of the Province of Australia",
+		"date":		"2012-11-21T09:30:00.000Z",
+		"dateEnd":	"2012-11-21T09:30:00.000Z",
+		"articleID":"n104",
+		"cate":		"2012"
+	},
+	{
+		"title": 	"Welcome to the final volume of NEXUS",
+		"date":		"2012-11-21T09:30:00.000Z",
+		"dateEnd":	"2012-11-21T09:30:00.000Z",
+		"articleID":"n105",
+		"cate":		"2012"
+	},
+	{
+		"title": 	"Internship with the Geneva office of FMSI",
+		"date":		"2012-10-19T09:30:00.000Z",
+		"dateEnd":	"2012-10-19T09:30:00.000Z",
+		"articleID":"n106",
+		"cate":		"2012"
+	}
+]

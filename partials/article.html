@@ -4,4 +4,9 @@
 		<a href="javascript:window.history.back();" class="headerBtn headerBtnLeft btnMenu" data-role="button"><i class="icon icon-chevron-left"></i></a>
 		<a href="#menu" class="headerBtn headerIconRight btnMenu" data-role="button"><i class="icon icon-reorder"></i></a>
 	</div>
+	<div class="pageContent" data-role="content">
+		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800">
+			<div class="contentView padded" data-role="scrollerContent" data-ng-bind-html="articleID + articleHTML"></div>
+		</div>
+	</div>
 </div>

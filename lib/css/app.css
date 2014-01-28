@@ -481,7 +481,7 @@ section,
 	.contentView a 				{ color:#007bc0!important; text-decoration:underline!important; }
 
 	/* media */
-	.contentView img 			{ display:block; border:0;	}
+	.contentView img 			{ display:block; width:100%; height:auto; margin:0 0 1em 0; border:0; }
 
 	/* list */
 	.contentView li 			{ font-size:13px; line-height:1.23em; margin:0 0 0.5em 0; }
@@ -661,7 +661,9 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 	.item .content {
 		position:relative; width:auto; height:auto; padding:0;
 		font-weight:400; }
-
+	.item .content.hasIcon { 
+		margin-right:30px!important; }
+	
 		/* common */
 		.item .content p { margin:0; }
 
@@ -687,21 +689,21 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 
 /* -------------------------------------------------------------------------- */
 /* interaction */
-.item.active {
-	background-color:#fff; background-image:none; border-color:#fff; }
+.item.active { background-color:#fff; background-image:none; border-color:#fff; }
+.item.active .dateBlock { background:#fff; }
 
 /* -------------------------------------------------------------------------- */
 /* custom */
 
 /* news */
-.item.news .content { margin:0 30px 0 80px; }
-.item.news .content .title { max-height:42px;/*3 lines*/ }
-
-/* event */
-.item.events .content { margin:0 0 0 60px; }
-.item.events .content.hasIcon { margin-right:30px; }
-.item.events .content .title { min-height:38px;/*2 lines*/ }
-.item.events.active .dateBlock { background:#fff; }
+.item.news .content 				{ margin:0 0 0 60px; }
+.item.news .content .title 			{ min-height:38px;/*2 lines*/ }
+/* events */
+.item.events .content 				{ margin:0 0 0 60px; }
+.item.events .content .title 		{ min-height:38px;/*2 lines*/ }
+/* programmes */
+.item.programmes .content 			{ margin:0 0 0 60px; }
+.item.programmes .content .title	{ min-height:38px;/*2 lines*/ }
 
 
 /* ==========================================================================

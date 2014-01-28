@@ -3,24 +3,6 @@
    ========================================================================== */
    
 /* -------------------------------------------------------------------------- */
-/* nav */
-.navItem {
-	/*transition*/
-	/*-webkit-transform:translate3d(0,0,0);*/
-	-webkit-transition:all 0.3s ease-in-out;
-	-moz-transition:all 0.3s ease-in-out;
-	-o-transition:all 0.3s ease-in-out;
-	transition:all 0.3s ease-in-out; }
-/*start*/
-.navItem.current-add,
-.navItem.current-remove-active 	{ background:transparent; }
-/*end*/
-.navItem.current,
-.navItem.current-add-active,
-.navItem.current-remove			{ background:#f2f2f2; }		
-
-
-/* -------------------------------------------------------------------------- */
 /* view anim prep */
 .view { 
 	position:absolute; top:0; bottom:0; left:0; right:0;
@@ -67,8 +49,3 @@
 	-ms-transform:translate3d(-100%,0,0);
 	-o-transform:translate3d(-100%,0,0);
 	transform:translate3d(-100%,0,0); }	
-
-/* -------------------------------------------------------------------------- */
-/* list anim */
-
-/* no list anim for performance issue */
