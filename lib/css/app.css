@@ -320,13 +320,14 @@ body {
 	/* -------------------------------------------------------------------------- */
 	/* menuItems */
 	.menuList .menuItems {
-		display:block; position:relative; width:100%; height:auto; margin:0; padding:0; overflow:hidden;
-		border-bottom:1px solid #333; }
+		display:block; position:relative; width:100%; height:auto; margin:0; padding:0; overflow:hidden; }
+	.menuList .menuItems.settings {
+		padding-bottom:50px; }
 
 		/* menuItem */
 		.menuList .menuItem {
-			display:block; position:relative; width:100%; height:42px; margin:0; padding:0 15px; overflow:hidden;
-			color:#ccc; background:transparent; border-top:1px solid #222;
+			display:block; position:relative; width:100%; height:auto; min-height:50px; margin:0; padding:0 15px; overflow:hidden;
+			color:#ccc; background:transparent; border-bottom:1px solid #222;
 			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 			/* icon */
@@ -340,15 +341,20 @@ body {
 
 			/* label */
 			.menuList .menuItems .label {
-				display:inline-block; width:auto; height:auto; margin:0; padding:0; overflow:hidden;
-				white-space:nowrap; text-overflow:ellipsis; vertical-align:middle;
-				font-size:18px; font-weight:400; line-height:42px; text-align:center; }
+				display:inline-block; width:auto; height:auto; margin:14px 0; padding:0; overflow:hidden;
+				vertical-align:middle;
+				font-size:18px; font-weight:400; line-height:22px; }
 
 		/* interaction */
 		.menuList .menuItem.active { background:#1badf8; border-color:#1badf8; }
 		.menuList .menuItem.active .icon,
 		.menuList .menuItem.active .label { color:#fff; }
 
+
+	/* -------------------------------------------------------------------------- */
+	/* menuItem.switch */
+	.menuItem.switch .label { margin-right:90px; }
+	
 
 /* ==========================================================================
    common - LAYOUT
@@ -852,13 +858,13 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 	/* -------------------------------------------------------------------------- */
 	/* switch-controls */
 	.slide[data-role="switch"] .switch-controls {
-		display:table; position:absolute; top:0; left:-40px; width:110px; height:auto; margin:0; padding:0; overflow:hidden;
+		display:table; position:absolute; top:0; left:0; width:110px; height:auto; margin:0; padding:0; overflow:hidden;
+		/*transform*/
+		-webkit-transform:translate3d(-40px,0,0);
+		transform:translate3d(-40px,0,0);
 		/*transition*/
-		/*-webkit-transform:translate3d(0,0,0);*/
-		-webkit-transition:left 0.3s ease-in-out;
-		-moz-transition:left 0.3s ease-in-out;
-		-o-transition:left 0.3s ease-in-out;
-		transition:left 0.3s ease-in-out; }
+		-webkit-transition:-webkit-transform 0.3s ease-in-out;
+		transition:transform 0.3s ease-in-out; }
 
 			/* common */
 			.slide[data-role="switch"] .switch-controls > span,
@@ -884,12 +890,20 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 
 /* -------------------------------------------------------------------------- */
 /* checked */
-.slide[data-role="switch"].checked { background:#6ddd3d; }
-.slide[data-role="switch"].checked .switch-controls { left:0; }
+.slide[data-role="switch"].checked { 
+	background:#6ddd3d; }
+	
+	/* switch-controls */
+	.slide[data-role="switch"].checked .switch-controls { 
+		/*transform*/
+		-webkit-transform:translate3d(0,0,0);
+		transform:translate3d(0,0,0); }
 
 /* -------------------------------------------------------------------------- */
 /* extend */
-.menuItem > .slide[data-role="switch"] { margin-top:6px; }
+.menuItem > .slide[data-role="switch"] { 
+	display:block; position:absolute; right:15px; top:50%; float:none;
+	margin-top:-15px; }
 
 
 /* ==========================================================================
