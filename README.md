@@ -1,4 +1,4 @@
-com.fraynework.app.seed
+com.fraynework.marist
 ====================
 
-Seed for App Projects
+Marist School App
