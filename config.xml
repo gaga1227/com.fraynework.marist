@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <widget xmlns     	= "http://www.w3.org/ns/widgets"
         xmlns:gap 	= "http://phonegap.com/ns/1.0"
-        id        	= "com.fraynework.app.seed"
+        id        	= "com.fraynework.marist"
         versionCode = "1"
-		version   	= "1.0.0">
+		version   	= "0.1.0">
 	<!-- versionCode is optional and Android only -->
 	
     <!-- The name of the application -->
-	<name>FW App Seed</name>
+	<name>Marist Schools Australia</name>
 	<!-- A description for your application -->
     <description>
-        Seed for App Projects
+        Marist Schools Australia Mobile App
     </description>
 	<!-- Author -->
     <author href="http://www.fraynework.com.au" email="contact@fraynework.com.au">

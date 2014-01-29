@@ -501,6 +501,18 @@ section,
 	/* text styles */
 	.contentView .date { color:#666; font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; text-transform:uppercase; }
 
+	/* -------------------------------------------------------------------------- */
+	/* cogs */
+	
+	/* btnItem */
+	.contentView a.btnItem {
+		display:block; position:relative; width:auto; height:auto; margin:1px 0; padding:6px 12px; overflow:hidden;
+		color:#333!important; background:#f2f2f2;
+		font-size:13px; font-weight:400; line-height:1.3em;
+		text-decoration:none!important; outline:0 none!important; }
+	.contentView a.btnItem.active {
+		color:#fff!important; background:#1badf8; }		
+	
 
 /* ==========================================================================
    common - FORMVIEW
@@ -685,7 +697,10 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 			color:#333; font-size:16px; line-height:1.2em; }
 		
 		/* debug */
-		.item .content .debug { top:-0.3em; opacity:0.5; }
+		.item .content .debug { 
+			display:inline-block; position:absolute; top:0; left:0; margin:-8px 0 0 0;
+			color:#bbb; text-transform:uppercase;
+			font-size:10px; line-height:1em; }
 
 	/* -------------------------------------------------------------------------- */
 	/* icon */
@@ -708,8 +723,9 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 .item.events .content 				{ margin:0 0 0 60px; }
 .item.events .content .title 		{ min-height:38px;/*2 lines*/ }
 /* programmes */
-.item.programmes .content 			{ margin:0 0 0 60px; }
-.item.programmes .content .title	{ min-height:38px;/*2 lines*/ }
+.item.programmes .dateBlock 		{ display:none; }
+.item.programmes .content 			{ margin:0; }
+.item.programmes .content .title	{ min-height:19px;/*1 lines*/ }
 
 
 /* ==========================================================================

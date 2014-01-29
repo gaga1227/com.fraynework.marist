@@ -1,169 +1,121 @@
 [
 	{ 
 		"title": 	"Dr Paul Sharkey, Director of Catholic Education, SA",
-		"date":		"2014-01-01T09:30:00.000Z",
-		"dateEnd":	"2014-02-01T10:00:00.000Z",
 		"articleID":"p012",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Dr Michele Connolly rsj - Magnificat", 
-		"date":		"2014-05-19T09:30:00.000Z",
-		"dateEnd":	"2014-05-20T15:00:00.000Z",
 		"articleID":"p013",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Dr Michele Connolly rsj - Luke 4:16-22", 
-		"date":		"2014-05-24T09:30:00.000Z",
-		"dateEnd":	"2014-05-25T15:00:00.000Z",
 		"articleID":"p015",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"McAuley Champagnat Programme Workshop A1", 
-		"date":		"2014-06-01T09:30:00.000Z",
-		"dateEnd":	"2014-06-02T15:00:00.000Z",
 		"articleID":"p016",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"McAuley Champagnat Programme Workshop A2",
-		"date":		"2014-07-07T09:30:00.000Z",
-		"dateEnd":	"2014-07-08T15:00:00.000Z",
 		"articleID":"p017",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"McAuley Champagnat Programme Workshop A3", 
-		"date":		"2014-09-13T09:30:00.000Z",
-		"dateEnd":	"2014-09-13T15:00:00.000Z",
 		"articleID":"p018",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Marist: Our Way of Being Catholic",
-		"date":		"2014-10-02T09:30:00.000Z",
-		"dateEnd":	"2014-10-02T15:00:00.000Z",
 		"articleID":"p019",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Graduate Certificate Programme - South Australia", 
-		"date":		"2014-12-25T09:30:00.000Z",
-		"dateEnd":	"2014-12-26T15:00:00.000Z",
 		"articleID":"p021",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"MLK Jr Holiday - No Classes - Office Closed",
-		"date":		"2014-06-25T09:30:00.000Z",
-		"dateEnd":	"2014-06-26T15:00:00.000Z",
 		"articleID":"p022",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Being Marist Conference", 
-		"date":		"2014-07-26T09:30:00.000Z",
-		"dateEnd":	"2014-07-26T15:00:00.000Z",
 		"articleID":"p023",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Footsteps1 - Making Jesus Christ Known and Loved",
-		"date":		"2014-07-27T09:30:00.000Z",
-		"dateEnd":	"2014-07-27T15:00:00.000Z",
 		"articleID":"p024",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Footsteps2 - Making Jesus Christ Known and Loved", 
-		"date":		"2014-07-28T09:30:00.000Z",
-		"dateEnd":	"2014-07-28T15:00:00.000Z",
 		"articleID":"p025",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"In the Champagnat Way: New Staff Induction - EASTERN REGION SYDNEY, NSW", 
-		"date":		"2014-08-20T09:30:00.000Z",
-		"dateEnd":	"2014-08-21T15:00:00.000Z",
 		"articleID":"p026",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"In the Champagnat Way: New Staff Induction - FAR NORTH QLD",
-		"date":		"2014-09-02T09:30:00.000Z",
-		"dateEnd":	"2014-09-03T15:00:00.000Z",
 		"articleID":"p027",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"In the Champagnat Way: New Staff Induction - GALEN", 
-		"date":		"2014-11-11T09:00:00.000Z",
-		"dateEnd":	"2014-11-11T09:30:00.000Z",
 		"articleID":"p028",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"In the Champagnat Way: New Staff Induction - MACARTHUR REGION SYDNEY, NSW", 
-		"date":		"2014-12-02T09:30:00.000Z",
-		"dateEnd":	"2014-12-03T10:00:00.000Z",
 		"articleID":"p029",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Schools of the Spirit", 
-		"date":		"2014-03-18T09:30:00.000Z",
-		"dateEnd":	"2014-03-18T15:00:00.000Z",
 		"articleID":"p051",
 		"cate":		"Additional Programmes by Request" 
 	},
 	{ 
 		"title": 	"Marist Spirituality", 
-		"date":		"2014-01-15T09:30:00.000Z",
-		"dateEnd":	"2014-01-16T09:30:00.000Z",
 		"articleID":"p052",
 		"cate":		"Additional Programmes by Request" 
 	},
 	{ 
 		"title": 	"Marist Pedagogy", 
-		"date":		"2014-04-30T09:30:00.000Z",
-		"dateEnd":	"2014-04-30T15:00:00.000Z",
 		"articleID":"p053",
 		"cate":		"Additional Programmes by Request" 
 	},
 	{ 
 		"title": 	"Marist Family Spirit", 
-		"date":		"2014-05-17T09:30:00.000Z",
-		"dateEnd":	"2014-05-20T15:00:00.000Z",
 		"articleID":"p054",
 		"cate":		"Additional Programmes by Request" 
 	},
 	{ 
 		"title": 	"Mary, the Mature Disciple", 
-		"date":		"2014-06-23T09:30:00.000Z",
-		"dateEnd":	"2014-06-23T10:00:00.000Z",
 		"articleID":"p055",
 		"cate":		"Additional Programmes by Request" 
 	},
 	{ 
 		"title": 	"Spirituality and Leadership 1 & 2", 
-		"date":		"2014-07-23T09:30:00.000Z",
-		"dateEnd":	"2014-07-23T10:00:00.000Z",
 		"articleID":"p056",
 		"cate":		"Additional Programmes by Request" 
 	},
 	{ 
 		"title": 	"Champagnat's Letters and Patrimony", 
-		"date":		"2014-08-23T09:30:00.000Z",
-		"dateEnd":	"2014-08-23T10:00:00.000Z",
 		"articleID":"p057",
 		"cate":		"Additional Programmes by Request" 
 	},
 	{ 
 		"title": 	"Twilight or Weekend Retreats", 
-		"date":		"2014-09-23T09:30:00.000Z",
-		"dateEnd":	"2014-09-23T10:00:00.000Z",
 		"articleID":"p058",
 		"cate":		"Additional Programmes by Request" 
 	}

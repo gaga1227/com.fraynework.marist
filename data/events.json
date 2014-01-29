@@ -8,8 +8,8 @@
 	},
 	{ 
 		"title": 	"MLK Jr Holiday - No Classes - Office Closed",
-		"date":		"2014-02-26T09:30:00.000Z",
-		"dateEnd":	"2014-02-26T15:00:00.000Z",
+		"date":		"2014-01-26T09:30:00.000Z",
+		"dateEnd":	"2014-01-26T10:00:00.000Z",
 		"articleID":"e002",
 		"cate":		"Conferences, Colloquiums, Meetings" 
 	},
@@ -78,8 +78,8 @@
 	},
 	{ 
 		"title": 	"Dr Paul Sharkey, Director of Catholic Education, SA",
-		"date":		"2014-02-24T09:30:00.000Z",
-		"dateEnd":	"2014-02-25T15:00:00.000Z",
+		"date":		"2014-01-01T09:30:00.000Z",
+		"dateEnd":	"2014-01-01T10:00:00.000Z",
 		"articleID":"p012",
 		"cate":		"Staff Programmes" 
 	},
@@ -154,10 +154,24 @@
 		"cate":		"Staff Programmes" 
 	},
 	{ 
-		"title": 	"Being Marist Conference", 
-		"date":		"2014-07-26T09:30:00.000Z",
-		"dateEnd":	"2014-07-26T15:00:00.000Z",
-		"articleID":"e023",
+		"title": 	"Being Marist Conference, Melbourne", 
+		"date":		"2014-02-24T09:30:00.000Z",
+		"dateEnd":	"2014-02-25T10:00:00.000Z",
+		"articleID":"e023a",
+		"cate":		"Staff Programmes" 
+	},
+	{ 
+		"title": 	"Being Marist Conference, Adelaide", 
+		"date":		"2014-02-26T09:30:00.000Z",
+		"dateEnd":	"2014-02-27T10:00:00.000Z",
+		"articleID":"e023b",
+		"cate":		"Staff Programmes" 
+	},
+	{ 
+		"title": 	"Being Marist Conference, Sydney", 
+		"date":		"2014-02-28T09:30:00.000Z",
+		"dateEnd":	"2014-02-29T10:00:00.000Z",
+		"articleID":"e023c",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
@@ -204,8 +218,8 @@
 	},
 	{ 
 		"title": 	"National Marist Faith Formators' Colloquium",
-		"date":		"2014-01-01T09:30:00.000Z",
-		"dateEnd":	"2014-01-01T10:00:00.000Z",
+		"date":		"2014-01-02T09:30:00.000Z",
+		"dateEnd":	"2014-01-03T09:00:00.000Z",
 		"articleID":"e030",
 		"cate":		"Conferences, Colloquiums, Meetings"
 	},
