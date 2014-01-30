@@ -18,7 +18,7 @@
 					</nav>
 					<h2 class="title"><span class="label">Settings</span></h2>
 					<nav class="menuItems settings">
-						<div class="menuItem switch" data-ng-click="toggleSetting('notification')" >
+						<div class="menuItem switch" data-role="button" data-ng-click="toggleSetting('notification')" >
 							<span class="label">Notification <span data-ng-show="settings.notification">On</span><span data-ng-hide="settings.notification">Off</span></span>
 							<div data-role="switch" class="slide" data-ng-class="{checked:settings.notification}">
 								<input type="checkbox" data-ng-model="settings.notification">
@@ -29,7 +29,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="menuItem switch" data-ng-click="toggleSetting('custom')" >
+						<div class="menuItem switch" data-role="button" data-ng-click="toggleSetting('custom')" >
 							<span class="label">Custom <span data-ng-show="settings.custom">On</span><span data-ng-hide="settings.custom">Off</span></span>
 							<div data-role="switch" class="slide" data-ng-class="{checked:settings.custom}">
 								<input type="checkbox" data-ng-model="settings.custom">
