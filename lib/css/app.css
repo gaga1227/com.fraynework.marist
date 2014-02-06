@@ -118,9 +118,6 @@ body {
 		.pageHeader .headerBtnLeft .icon { left:15px; }
 		.pageHeader .headerBtnRight .icon { right:15px; }
 		
-		/* brand */
-		/*.pageHeader .headerBtn.brand { background:url(../img/img-brand-small.png) center center no-repeat; background-size:30px; }*/
-		
 	/* interaction */
 	.pageHeader .headerBtn.active { background:#1badf8; }
 
@@ -273,23 +270,23 @@ body {
    ========================================================================== */
 
 /* title/logo/crest */
-.brandTitle {
-	display:block; position:relative; width:100%; height:100px; margin:0 auto; padding:0; overflow:hidden;
-	background:#050505 url(../img/img-brand.png) center center no-repeat; background-size:80px; }
+.brand {
+	display:block; position:relative; width:100%; height:35%; margin:0 auto; padding:0; overflow:hidden;
+	background:url(../img/img-brand.png) center center no-repeat; background-size:240px 135px; }
 
 	/* btnBack */
-	.btnBack { 
+	.brand .btnBack { 
 		display:block; position:absolute; top:50%; left:15px; width:40px; height:40px; margin:-20px 0 0 0; padding:0; overflow:hidden;
 		color:#fff; background:transparent;
 		font-size:28px; line-height:40px; text-align:center;
 		/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
 		/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
-	.btnBack.active { 
+	.brand .btnBack.active { 
 		color:#050505; background:#1badf8; }
 		
 		/* icon */
-		.btnBack .icon { width:100%; height:100%; text-align:center; }
-		
+		.brand .btnBack .icon { width:100%; height:100%; text-align:center; }
+
 
 /* ==========================================================================
    structure - MENULIST
@@ -353,7 +350,7 @@ body {
 
 	/* -------------------------------------------------------------------------- */
 	/* menuItem.switch */
-	.menuItem.switch .label { margin-right:90px; }
+	.menuList .menuItem.switch .label { margin-right:90px; }
 	
 
 /* ==========================================================================
@@ -917,16 +914,108 @@ h3[data-role="title"] > .icon { height:35px; font-size:15px; line-height:35px; }
 
 /* -------------------------------------------------------------------------- */
 /* extend */
-.menuItem > .slide[data-role="switch"] { 
+.menuList .menuItem > .slide[data-role="switch"] { 
 	display:block; position:absolute; right:15px; top:50%; float:none;
 	margin-top:-15px; }
 
 
 /* ==========================================================================
-   page - CUSTOM
+   page - HOME
    ========================================================================== */
 
+/* -------------------------------------------------------------------------- */
+/* container */
+#pgHome { 
+	background:#373d49 url(../img/bg-brand-home.jpg) center top no-repeat; background-size:cover; }
 
+/* -------------------------------------------------------------------------- */
+/* menu */
+#pgHome .menu { 
+	position:absolute; top:35%; bottom:75px; left:4%; right:4%; width:auto; height:auto; margin:0; padding:0; overflow:hidden;
+	background-positon:center center; background-repeat:no-repeat; background-size:cover; border-bottom:2px solid #343a45; 
+	/*border-radius*/-webkit-border-radius:0 0 5px 5px; border-radius:0 0 5px 5px;
+	/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
+	
+	/* -------------------------------------------------------------------------- */
+	/* menuItem */
+	#pgHome .menuItem { 
+		display:block; position:absolute; top:0; width:50%; height:40%; margin:0; padding:0; overflow:hidden;
+		color:#fff!important; text-align:center;
+		text-decoration:none!important;
+		/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;	}
+	
+	/* grid layout */
+	#pgHome .menuItem:nth-child(odd) 	{ left:0; }
+	#pgHome .menuItem:nth-child(even) 	{ right:0; }
+	#pgHome .menuItem:nth-child(n+3) 	{ top:40%; }
+	#pgHome .menuItem:nth-child(n+5) 	{ top:80%; height:20%; }
+	
+	/* theme */
+	#pgHome .menuItem:nth-child(1) 		{ background-color:#17c5f4; background-image:url(../img/bg-x-blu.png); }
+	#pgHome .menuItem:nth-child(2) 		{ background-color:#aa91c6; background-image:url(../img/bg-x-ppl.png); }
+	#pgHome .menuItem:nth-child(3) 		{ background-color:#88ca82; background-image:url(../img/bg-x-grn.png); }
+	#pgHome .menuItem:nth-child(4) 		{ background-color:#f37a8a; background-image:url(../img/bg-x-red.png); }
+	#pgHome .menuItem:nth-child(n+5)	{ background-color:#4b515c; border-top:1px solid #474d57; }
+	
+	/* style */
+	#pgHome .menuItem:nth-child(1) 		{ -webkit-border-radius:5px 0 0 0; border-radius:5px 0 0 0; }
+	#pgHome .menuItem:nth-child(2) 		{ -webkit-border-radius:0 5px 0 0; border-radius:0 5px 0 0; }
+	#pgHome .menuItem:nth-last-child(1) { -webkit-border-radius:0 0 5px 0; border-radius:0 0 5px 0; border-left:1px solid #414752; /*sep*/ }
+	#pgHome .menuItem:nth-last-child(2) { -webkit-border-radius:0 0 0 5px; border-radius:0 0 0 5px; }	
+	
+		/* icon */
+		#pgHome .menuItem:before { 
+			display:block; position:absolute; top:50%; left:50%; margin:-30px 0 0 -20px; 
+			font-size:40px; line-height:1em; }
+		#pgHome .menuItem.sml:before { 
+			display:inline-block; position:static; top:auto; left:auto; margin:0; 
+			opacity:0.4; vertical-align:middle;
+			font-size:14px; }
+		#pgHome .menuItem.sml:last-child:before { 
+			font-size:16px; }
+		#pgHome .menuItem.sml:after { 
+			content:""; display:inline-block; width:1px; height:100%; 
+			vertical-align:middle; }
+		
+		/* label */
+		#pgHome .menuItem .label { 
+			display:block; position:absolute; top:50%; left:0; width:100%; height:auto; margin:14px 0 0 0; 
+			opacity:0.6;
+			font-size:14px; line-height:1em; white-space:nowrap; text-overflow:ellipsis; }
+		#pgHome .menuItem.sml .label { 
+			display:inline-block; position:static; top:auto; left:auto; width:auto; margin:0 0 0 6px;
+			opacity:0.5; vertical-align:middle; }
+
+/* interaction */
+#pgHome .menuItem.active { background-image:none; }
+#pgHome .menuItem.sml.active { background-color:#80848b; }
+#pgHome .menuItem.sml.active:before,
+#pgHome .menuItem.sml.active .label { opacity:1; }
+
+/* -------------------------------------------------------------------------- */
+/* alert */
+#pgHome .alert { 
+	display:block; position:absolute; left:0; bottom:0; width:100%; height:auto; max-height:75px; margin:0; padding:15px 20px 15px 60px; overflow:hidden;
+	font-size:10px; line-height:15px;
+	/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+	
+	/* icon */
+	#pgHome .alert .icon { 
+		position:absolute; top:50%; left:20px; width:32px; height:32px; margin:-16px 0 0 0; padding:0; overflow:hidden;
+		color:#656a73; border:2px solid #656a73;
+		font-size:20px; line-height:1.2em;
+		/*border-radius*/-webkit-border-radius:50%; border-radius:50%;
+		/*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box;
+		/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
+	
+	/* text */
+	#pgHome .alert span		{ display:block; }
+	#pgHome .alert .label 	{ color:#656a73; }
+	#pgHome .alert .title 	{ color:#9b9ea4; }
+
+/* interaction */
+#pgHome .alert.active span,
+#pgHome .alert.active .icon  { color:#fff; border-color:#fff; }
 
 
 /* ==========================================================================

@@ -9,6 +9,7 @@
 				<div data-role="scrollerContent">
 					<h2 class="title"><span class="label">Menu</span></h2>
 					<nav class="menuItems">
+						<a href="#home" class="menuItem" data-role="button"><span class="label">Home</span></a>
 						<a href="#sec-events" class="menuItem" data-role="button"><span class="label">Events</span></a>
 						<a href="#sec-programmes" class="menuItem" data-role="button"><span class="label">Programmes</span></a>
 						<a href="#sec-publications" class="menuItem" data-role="button"><span class="label">Publications</span></a>
@@ -18,10 +19,10 @@
 					</nav>
 					<h2 class="title"><span class="label">Settings</span></h2>
 					<nav class="menuItems settings">
-						<div class="menuItem switch" data-role="button" data-ng-click="toggleSetting('notification')" >
-							<span class="label">Notification <span data-ng-show="settings.notification">On</span><span data-ng-hide="settings.notification">Off</span></span>
-							<div data-role="switch" class="slide" data-ng-class="{checked:settings.notification}">
-								<input type="checkbox" data-ng-model="settings.notification">
+						<div class="menuItem switch" data-role="button" ng-click="toggleSetting('notification')" >
+							<span class="label">Notification <span ng-show="settings.notification">On</span><span ng-hide="settings.notification">Off</span></span>
+							<div data-role="switch" class="slide" ng-class="{checked:settings.notification}">
+								<input type="checkbox" ng-model="settings.notification">
 								<div class="switch-controls">
 									<span class="switch-left"></span>
 									<label>&nbsp;</label>
@@ -29,10 +30,10 @@
 								</div>
 							</div>
 						</div>
-						<div class="menuItem switch" data-role="button" data-ng-click="toggleSetting('custom')" >
-							<span class="label">Custom <span data-ng-show="settings.custom">On</span><span data-ng-hide="settings.custom">Off</span></span>
-							<div data-role="switch" class="slide" data-ng-class="{checked:settings.custom}">
-								<input type="checkbox" data-ng-model="settings.custom">
+						<div class="menuItem switch" data-role="button" ng-click="toggleSetting('custom')" >
+							<span class="label">Custom <span ng-show="settings.custom">On</span><span ng-hide="settings.custom">Off</span></span>
+							<div data-role="switch" class="slide" ng-class="{checked:settings.custom}">
+								<input type="checkbox" ng-model="settings.custom">
 								<div class="switch-controls">
 									<span class="switch-left"></span>
 									<label>&nbsp;</label>

@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html data-ng-app="myApp">
+<html ng-app="myApp">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no">
 <title>Marist School Australia</title>
 <!-- CSS:FONT -->
-<link rel="stylesheet" href="lib/font/source-sans-pro/font.css">
+<link rel="stylesheet" href="lib/font/roboto/font.css">
 <!-- CSS:ICON -->
-<link rel="stylesheet" href="lib/icon/fontawesome/icon.css">
+<link rel="stylesheet" href="lib/icon/typicons/icon.css">
 <!-- CSS:APP -->
 <link rel="stylesheet" href="lib/css/normalize.css">
 <link rel="stylesheet" href="lib/css/app.css">
@@ -27,11 +27,12 @@
 <script src="lib/js/angular/angular-sanitize.js"></script>
 <script src="lib/js/angular/angular-resource.js"></script>
 <!-- JS:NG LIB -->
+<script src="lib/js/ng-app/bindonce.js"></script>
 <script src="lib/js/ng-app/ng-iscroll.js"></script>
 </head>
-<body data-ng-class="viewAnim">
+<body ng-class="viewAnim">
 <!-- CONTAINER -->
-<div id="container" data-role="page-container" class="view" data-ng-view></div>
+<div id="container" data-role="page-container" class="view" ng-view></div>
 <!-- LOADER -->
 <div id="loader"></div>
 <!-- JS:APP -->
