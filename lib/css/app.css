@@ -69,8 +69,7 @@ body {
 /* -------------------------------------------------------------------------- */
 /* container */
 .pageHeader {
-	position:absolute; top:0; left:0; right:0; width:auto; height:55px; margin:0; padding:0; overflow:hidden;
-	background:none; }
+	position:absolute; top:0; left:0; right:0; width:auto; height:55px; margin:0; padding:0; overflow:hidden; }
 
 	/* -------------------------------------------------------------------------- */
 	/* headerTitle */
@@ -84,12 +83,13 @@ body {
 		.pageHeader .headerTitle.small .cateID 	{ display:block; font-size:13px; font-weight:400; line-height:1em; margin-bottom:5px; opacity:0.9; }
 	
 			/* headerTitle.hasFilter */
-			.pageHeader .headerTitle .secID .label { display:inline-block; position:relative; padding-right:15px; }
+			.pageHeader .headerTitle .secID .label { display:inline-block; position:relative; }
 			.pageHeader .headerTitle .secID .label .icon { right:0; bottom:0; font-size:14px; }
 	
 		/* filter */
 		.pageHeader .headerTitle select.filter { 
-			display:block; position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100;
+			display:block; position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100%;
+			border:0;
 			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
 			opacity:0; }
 
@@ -693,8 +693,35 @@ section,
 /* btnBack */
 #pgMenu .btnBack 		{ opacity:0.5; }
 #pgMenu .btnBack.active { opacity:1; }
+
+
+/* ==========================================================================
+   common - THEMES
+   ========================================================================== */
    
-   
+/* -------------------------------------------------------------------------- */
+/* ppl */
+
+/* c|activec */
+.ppl .c-1,
+.ppl .active.activec-1		{ color:#b59ecd!important; }
+.ppl .c-2,
+.ppl .active.activec-2		{ color:#a286c0!important; }
+.ppl .c-3,
+.ppl .active.activec-3		{ color:#9178ac!important; }
+.ppl .c-4,
+.ppl .active.activec-4		{ color:#796490!important; }
+/* bgc|activebgc */
+.ppl .bgc-1,
+.ppl .active.activebgc-1	{ background-color:#b59ecd!important; }
+.ppl .bgc-2,
+.ppl .active.activebgc-2	{ background-color:#a286c0!important; }
+.ppl .bgc-3,
+.ppl .active.activebgc-3	{ background-color:#9178ac!important; }
+.ppl .bgc-4,
+.ppl .active.activebgc-4	{ background-color:#796490!important; }
+
+ 
 /* ==========================================================================
    Common Styles
    Author: JX 20120127

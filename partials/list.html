@@ -1,41 +1,28 @@
-<div id="pg{{sectionID | capitalize}}" data-role="page" class="page">
-	<div class="pageHeader" data-role="header">
-		<span class="headerTitle" ng-class="{small:showFilter}">
-			<span class="secID" ng-class="{hasFilter:showFilter}"><span class="label">{{sectionID}}<i class="icon icon-caret-down" ng-show="hasCategories"></i></span></span>
-			<span class="cateID" ng-show="showFilter">{{categoryID}}</span>
-			<select class="filter" ng-show="hasCategories" ng-model="currentFilter" ng-change="filterList()">
-				<option ng-repeat="category in categories">{{category.value}}</option>
+<div data-role="page" class="page ppl" bindonce="section" bo-id="'pg' + (section.id | capitalize)">
+	<div class="pageHeader bgc-2" data-role="header">
+		<span class="headerTitle" ng-class="{small:section.showFilter}">
+			<span class="secID" ng-class="{hasFilter:section.showFilter}"><span class="label">{{section.id}}<i class="typcn-arrow-sorted-down" ng-show="section.hasCategories"></i></span></span>
+			<span class="cateID" ng-show="section.showFilter">{{section.filter}}</span>
+			<select class="filter" ng-show="section.hasCategories" ng-model="section.currentFilter" ng-change="filterList()">
+				<option ng-repeat="category in section.categories">{{category.value}}</option>
 			</select>
 		</span>
-		<a href="#menu" class="headerBtn right btnMenu" data-role="button"><i class="icon icon-reorder"></i></a>
+		<a href="#menu" class="headerBtn right btnMenu" data-role="button"><i class="icon typcn-th-menu"></i></a>
 	</div>
 	<div class="pageContent" data-role="content">
-		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="(entries | filter:listFilter).length">
-			<div data-role="scrollerContent" ng-if="!hasArticle">
+		<div class="scroller" data-role="scroller"
+			ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="(entries | filter:section.listFilter).length"
+			bindonce="entries">
+			<div data-role="scrollerContent">
 				<a 	class="item" data-role="button"
-					href="{{entry.link}}" data-link="external"
-					ng-class="sectionID"
-					ng-repeat="entry in entries | filter:listFilter | orderBy:order">
-					<div class="content hasIcon">
-						<p class="title"><span class="debug">{{$index}}: {{entry.articleID}}</span>{{entry.title | limitTo:charLimit}}</p>
+					bo-class="section.id"
+					ng-repeat="entry in entries | filter:section.listFilter | orderBy:order"
+					bo-href="'#article/' + entry.articleID">
+					<div class="content">
+						<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
+						<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
 					</div>
-					<i class="icon icon-circle-arrow-down" ng-if="sectionID == 'publications'"></i>
-					<i class="icon icon-circle-arrow-right" ng-if="sectionID == 'links'"></i>
-				</a>
-			</div>
-			<div data-role="scrollerContent" ng-if="hasArticle">
-				<a 	class="item" data-role="button"
-					href="#sec-{{sectionID}}/article-{{entry.articleID}}"
-					ng-class="sectionID"
-					ng-repeat="entry in entries | filter:listFilter | orderBy:order">
-					<div class="dateBlock" ng-if="sectionID != 'programmes'">
-						<span class="d">{{entry.date | date:'d'}}<span ng-if="(entry.date | date:'d') != (entry.dateEnd | date:'d')">-{{entry.dateEnd | date:'d'}}</span></span>
-						<span class="m">{{entry.date | date:'MMM'}}</span>
-					</div>
-					<div class="content" ng-class="{hasIcon: (sectionID == 'events') && (entry.cate == 'Staff Programmes') }">
-						<p class="title"><span class="debug">{{$index}}: {{entry.articleID}}</span>{{entry.title | limitTo:charLimit}}</p>
-					</div>
-					<i class="icon icon-link" ng-if="(sectionID == 'events') && (entry.cate == 'Staff Programmes')"></i>
+					<i class="icon typcn-chevron-right"></i>
 				</a>
 			</div>
 			<div class="acenter" ng-show="!(entries | filter:listFilter).length"><h3>No current record in this category</h3></div>
