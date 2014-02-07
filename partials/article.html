@@ -1,8 +1,8 @@
 <div id="pg{{articleID | capitalize}}" data-role="page" class="page">
 	<div class="pageHeader" data-role="header">
 		<span class="headerTitle">{{sectionID}} Article</span>
-		<a href="javascript:window.history.back();" class="headerBtn headerBtnLeft btnMenu" data-role="button"><i class="icon icon-chevron-left"></i></a>
-		<a href="#menu" class="headerBtn headerIconRight btnMenu" data-role="button"><i class="icon icon-reorder"></i></a>
+		<a href="javascript:window.history.back();" class="headerBtn left btnBack" data-role="button"><i class="icon icon-chevron-left"></i></a>
+		<a href="#menu" class="headerBtn right btnMenu" data-role="button"><i class="icon icon-reorder"></i></a>
 	</div>
 	<div class="pageContent" data-role="content">
 		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="articleHTML">

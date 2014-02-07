@@ -1,47 +1,26 @@
-<div id="pgMenu" data-role="page" class="page">
-	<div class="pageBg"></div>
-	<div class="pageContent" data-role="content">
-		<div class="brandTitle">
-			<a href="javascript:window.history.back();" class="headerBtn headerBtnLeft btnBack" data-role="button"><i class="icon icon-angle-left"></i></a>
-		</div>
-		<div class="menuList">
-			<div class="scroller" data-role="scroller" ng-iscroll ng-iscroll-delay="800">
-				<div data-role="scrollerContent">
-					<h2 class="title"><span class="label">Menu</span></h2>
-					<nav class="menuItems">
-						<a href="#home" class="menuItem" data-role="button"><span class="label">Home</span></a>
-						<a href="#sec-events" class="menuItem" data-role="button"><span class="label">Events</span></a>
-						<a href="#sec-programmes" class="menuItem" data-role="button"><span class="label">Programmes</span></a>
-						<a href="#sec-publications" class="menuItem" data-role="button"><span class="label">Publications</span></a>
-						<a href="#sec-news" class="menuItem" data-role="button"><span class="label">News</span></a>
-						<a href="#sec-links" class="menuItem" data-role="button"><span class="label">Links</span></a>
-						<a href="#pg-about" class="menuItem" data-role="button"><span class="label">About</span></a>
-					</nav>
-					<h2 class="title"><span class="label">Settings</span></h2>
-					<nav class="menuItems settings">
-						<div class="menuItem switch" data-role="button" ng-click="toggleSetting('notification')" >
-							<span class="label">Notification <span ng-show="settings.notification">On</span><span ng-hide="settings.notification">Off</span></span>
-							<div data-role="switch" class="slide" ng-class="{checked:settings.notification}">
-								<input type="checkbox" ng-model="settings.notification">
-								<div class="switch-controls">
-									<span class="switch-left"></span>
-									<label>&nbsp;</label>
-									<span class="switch-right"></span>
-								</div>
-							</div>
-						</div>
-						<div class="menuItem switch" data-role="button" ng-click="toggleSetting('custom')" >
-							<span class="label">Custom <span ng-show="settings.custom">On</span><span ng-hide="settings.custom">Off</span></span>
-							<div data-role="switch" class="slide" ng-class="{checked:settings.custom}">
-								<input type="checkbox" ng-model="settings.custom">
-								<div class="switch-controls">
-									<span class="switch-left"></span>
-									<label>&nbsp;</label>
-									<span class="switch-right"></span>
-								</div>
-							</div>
-						</div>
-					</nav>
+<div id="pgMenu" data-role="page" class="page bg">
+	<div class="brand"></div>
+	<div class="pageHeader" data-role="header">
+		<a href="javascript:window.history.back();" class="headerBtn left btnBack" data-role="button"><i class="icon typcn-chevron-left"></i></a>
+	</div>
+	<div class="pageContent menuList" data-role="content">
+		<div class="scroller mask noBtm" data-role="scroller" ng-iscroll="menuListScroller" ng-iscroll-delay="800">
+			<div data-role="scrollerContent">
+				<a href="#home" class="menuItem typcn-home-outline" data-role="button">Home</a>
+				<a href="#sec-events" class="menuItem typcn-flag-outline" data-role="button">Events</a>
+				<a href="#sec-programmes" class="menuItem typcn-star-outline" data-role="button">Programmes</a>
+				<a href="#sec-publications" class="menuItem typcn-book" data-role="button">Publications</a>
+				<a href="#sec-news" class="menuItem typcn-news" data-role="button">News</a>
+				<a href="#sec-links" class="menuItem typcn-device-desktop" data-role="button">Links</a>
+				<a href="#pg-about" class="menuItem typcn-mortar-board" data-role="button">About</a>
+				<h2 class="title">Settings</h2>
+				<div class="settingItem">
+					Notification
+					<div class="toggle" data-role="toggle" ng-class="{checked:settings.notification}" ng-click="toggleSetting('notification')">
+						<i class="icon typcn-tick"></i>
+						<span class="handle"></span>
+						<i class="icon typcn-times"></i>
+					</div>
 				</div>
 			</div>
 		</div>
