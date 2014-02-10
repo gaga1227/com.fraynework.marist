@@ -1,11 +1,11 @@
-<div id="pg{{pageID | capitalize}}" data-role="page" class="page">
+<div id="pg{{section.pageID | capitalize}}" data-role="page" class="page">
 	<div class="pageHeader" data-role="header">
-		<span class="headerTitle">{{pageID}}</span>
+		<span class="headerTitle">{{section.pageID}}</span>
 		<a href="#menu" class="headerBtn right btnMenu" data-role="button"><i class="icon icon-reorder"></i></a>
 	</div>
 	<div class="pageContent" data-role="content">
-		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="pageHTML">
-			<div class="contentView padded" data-role="scrollerContent" ng-bind-html="pageID + pageHTML"></div>
+		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="section.pageHTML">
+			<div class="contentView padded" data-role="scrollerContent" ng-bind-html="section.pageID + section.pageHTML"></div>
 		</div>
 	</div>
 </div>

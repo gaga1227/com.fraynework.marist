@@ -13,11 +13,25 @@
 		<div class="scroller" data-role="scroller"
 			ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="(entries | filter:section.listFilter).length"
 			bindonce="entries">
-			<div data-role="scrollerContent">
+			<!-- PROGRAMMES -->
+			<div data-role="scrollerContent" ng-if="hasArticle">
 				<a 	class="item" data-role="button"
 					bo-class="section.id"
 					ng-repeat="entry in entries | filter:section.listFilter | orderBy:order"
 					bo-href="'#article/' + entry.articleID">
+					<div class="content">
+						<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
+						<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
+					</div>
+					<i class="icon typcn-chevron-right"></i>
+				</a>
+			</div>
+			<!-- PUBLICATIONS/LINKS -->
+			<div data-role="scrollerContent" ng-if="!hasArticle">
+				<a 	class="item" data-role="button"
+					bo-class="section.id"
+					ng-repeat="entry in entries | filter:section.listFilter | orderBy:order"
+					bo-href="entry.link" data-link="external">
 					<div class="content">
 						<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
 						<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
