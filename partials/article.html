@@ -1,12 +1,12 @@
-<div id="pg{{section.articleID | capitalize}}" data-role="page" class="page">
-	<div class="pageHeader" data-role="header">
-		<span class="headerTitle">{{section.id}} Article</span>
-		<a href="javascript:window.history.back();" class="headerBtn left btnBack" data-role="button"><i class="icon icon-chevron-left"></i></a>
-		<a href="#menu" class="headerBtn right btnMenu" data-role="button"><i class="icon icon-reorder"></i></a>
+<div data-role="page" class="page" bindonce="section" bo-id="'pg' + (section.id | capitalize)" bo-class="section.theme">
+	<div class="pageHeader bgc-2" data-role="header">
+		<a href="javascript:window.history.back();" class="headerBtn left btnBack" data-role="button"><i class="icon typcn-chevron-left"></i></a>
+		<a href="#menu" class="headerBtn right btnMenu" data-role="button"><i class="icon typcn-th-menu"></i></a>
 	</div>
 	<div class="pageContent" data-role="content">
 		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="section.articleHTML">
-			<div class="contentView padded" data-role="scrollerContent" ng-bind-html="section.articleID + section.articleHTML"></div>
+			<div class="contentView padded" data-role="scrollerContent" 
+			bo-html="'<span class=&quot;debug&quot;>' + section.articleID + '</span>' + section.articleHTML"></div>
 		</div>
 	</div>
 </div>

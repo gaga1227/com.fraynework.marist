@@ -1,4 +1,4 @@
-<div data-role="page" class="page ppl" bindonce="section" bo-id="'pg' + (section.id | capitalize)">
+<div data-role="page" class="page" bindonce="section" bo-id="'pg' + (section.id | capitalize)" bo-class="section.theme">
 	<div class="pageHeader bgc-2" data-role="header">
 		<span class="headerTitle" ng-class="{small:section.showFilter}">
 			<span class="secID" ng-class="{hasFilter:section.showFilter}"><span class="label">{{section.id}}<i class="typcn-arrow-sorted-down" ng-show="section.hasCategories"></i></span></span>
@@ -12,13 +12,13 @@
 	<div class="pageContent" data-role="content">
 		<div class="scroller" data-role="scroller"
 			ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="(entries | filter:section.listFilter).length"
-			bindonce="entries">
+			bindonce="entries" bo-switch="section.id">
 			<!-- PROGRAMMES -->
-			<div data-role="scrollerContent" ng-if="hasArticle">
+			<div data-role="scrollerContent" bo-switch-when="programmes">
 				<a 	class="item" data-role="button"
 					bo-class="section.id"
-					ng-repeat="entry in entries | filter:section.listFilter | orderBy:order"
-					bo-href="'#article/' + entry.articleID">
+					ng-repeat="entry in entries | filter:section.listFilter | orderBy:section.order"
+					bo-href="'#' + section.id + '/article/' + entry.articleID">
 					<div class="content">
 						<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
 						<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
@@ -27,11 +27,11 @@
 				</a>
 			</div>
 			<!-- PUBLICATIONS/LINKS -->
-			<div data-role="scrollerContent" ng-if="!hasArticle">
-				<a 	class="item" data-role="button"
+			<div data-role="scrollerContent" bo-switch-when="publications">
+				<a 	class="item" data-role="button" data-link="external"
 					bo-class="section.id"
-					ng-repeat="entry in entries | filter:section.listFilter | orderBy:order"
-					bo-href="entry.link" data-link="external">
+					ng-repeat="entry in entries | filter:section.listFilter | orderBy:section.order"
+					bo-href="entry.link">
 					<div class="content">
 						<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
 						<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
@@ -39,7 +39,20 @@
 					<i class="icon typcn-chevron-right"></i>
 				</a>
 			</div>
-			<div class="acenter" ng-show="!(entries | filter:listFilter).length"><h3>No current record in this category</h3></div>
+			<!-- LINKS -->
+			<div data-role="scrollerContent" bo-switch-when="links">
+				<a 	class="item" data-role="button" data-link="external"
+					bo-class="section.id"
+					ng-repeat="entry in entries | filter:section.listFilter | orderBy:section.order"
+					bo-href="entry.link">
+					<div class="content">
+						<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
+						<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
+					</div>
+					<i class="icon typcn-chevron-right"></i>
+				</a>
+			</div>
+			<div class="acenter" ng-show="!(entries | filter:section.listFilter).length"><h3>No current record in this category</h3></div>
 		</div>
 	</div>
 </div>
