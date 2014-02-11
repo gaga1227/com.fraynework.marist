@@ -1,44 +1,74 @@
 [
-	{ 
-		"title": 	"Christmas Blessings",
-		"date":		"2013-12-23T09:30:00.000Z",
-		"dateEnd":	"2013-12-23T09:30:00.000Z",
-		"articleID":"n101",
-		"cate":		"2013"
-	},
-	{ 
-		"title": 	"Marist Advent Reflection Booklet",
-		"date":		"2013-11-01T09:30:00.000Z",
-		"dateEnd":	"2013-11-01T09:30:00.000Z",
-		"articleID":"n102",
-		"cate":		"2013"
-	},
-	{ 
-		"title": 	"Pink Lightning! – A New Initiative by Marist Youth Care to Support at-Risk Young Women",
-		"date":		"2013-10-17T09:30:00.000Z",
-		"dateEnd":	"2013-10-17T09:30:00.000Z",
-		"articleID":"n103",
-		"cate":		"2013"
-	},
-	{
-		"title": 	"Inauguration of the Province of Australia",
-		"date":		"2012-11-21T09:30:00.000Z",
-		"dateEnd":	"2012-11-21T09:30:00.000Z",
-		"articleID":"n104",
-		"cate":		"2012"
-	},
-	{
-		"title": 	"Welcome to the final volume of NEXUS",
-		"date":		"2012-11-21T09:30:00.000Z",
-		"dateEnd":	"2012-11-21T09:30:00.000Z",
-		"articleID":"n105",
-		"cate":		"2012"
-	},
-	{
-		"title": 	"Internship with the Geneva office of FMSI",
-		"date":		"2012-10-19T09:30:00.000Z",
-		"dateEnd":	"2012-10-19T09:30:00.000Z",
-		"articleID":"n106",
-		"cate":		"2012"
-	}
+    {
+        "y": "2013",
+        "m": "December",
+        "entries": [
+            {
+                "title": "Christmas Blessings",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "d": "23",
+                "articleID": "n101",
+                "cate": "2013"
+            }
+        ]
+    },
+    {
+        "y": "2013",
+        "m": "November",
+        "entries": [
+            {
+                "title": "Marist Advent Reflection Booklet",
+                "desc": "",
+                "d": "01",
+                "articleID": "n102",
+                "cate": "2013"
+            }
+        ]
+    },
+    {
+        "y": "2013",
+        "m": "October",
+        "entries": [
+            {
+                "title": "Pink Lightning! – A New Initiative by Marist Youth Care to Support at-Risk Young Women",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "d": "17",
+                "articleID": "n103",
+                "cate": "2013"
+            }
+        ]
+    },
+    {
+        "y": "2012",
+        "m": "November",
+        "entries": [
+            {
+                "title": "Inauguration of the Province of Australia",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "d": "21",
+                "articleID": "n104",
+                "cate": "2012"
+            },
+            {
+                "title": "Welcome to the final volume of NEXUS",
+                "desc": "",
+                "d": "21",
+                "articleID": "n105",
+                "cate": "2012"
+            }
+        ]
+    },
+    {
+        "y": "2012",
+        "m": "October",
+        "entries": [
+            {
+                "title": "Internship with the Geneva office of FMSI",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "d": "19",
+                "articleID": "n106",
+                "cate": "2012"
+            }
+        ]
+    }
 ]

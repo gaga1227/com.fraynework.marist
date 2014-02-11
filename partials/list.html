@@ -1,9 +1,9 @@
 <div data-role="page" class="page" bindonce="section" bo-id="'pg' + (section.id | capitalize)" bo-class="section.theme">
 	<div class="pageHeader bgc-2" data-role="header">
-		<span class="headerTitle" ng-class="{small:section.showFilter}">
-			<span class="secID" ng-class="{hasFilter:section.showFilter}"><span class="label">{{section.id}}<i class="typcn-arrow-sorted-down" ng-show="section.hasCategories"></i></span></span>
-			<span class="cateID" ng-show="section.showFilter">{{section.filter}}</span>
-			<select class="filter" ng-show="section.hasCategories" ng-model="section.currentFilter" ng-change="filterList()">
+		<span class="headerTitle" bo-class="{'small':section.showFilter}">
+			<span class="secID" bo-class="{'hasFilter':section.showFilter}"><span class="label">{{section.id}}<i class="typcn-arrow-sorted-down" bo-if="section.hasCategories"></i></span></span>
+			<span class="cateID" bo-if="section.showFilter">{{section.filter}}</span>
+			<select class="filter" bo-if="section.hasCategories" ng-model="section.currentFilter" ng-change="filterList()">
 				<option ng-repeat="category in section.categories">{{category.value}}</option>
 			</select>
 		</span>
@@ -52,7 +52,7 @@
 					<i class="icon typcn-chevron-right"></i>
 				</a>
 			</div>
-			<div class="acenter" ng-show="!(entries | filter:section.listFilter).length"><h3>No current record in this category</h3></div>
+			<div class="acenter" bo-if="!(entries | filter:section.listFilter).length"><h3>No current record in this category</h3></div>
 		</div>
 	</div>
 </div>
