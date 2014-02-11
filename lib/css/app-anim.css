@@ -6,7 +6,7 @@
 /* view anim prep */
 .view { 
 	position:absolute; top:0; bottom:0; left:0; right:0;
-	background:#fff;
+	background:#ededed;
 	-webkit-transition:all 0.4s ease-in-out; transition:all 0.4s ease-in-out;
 	-webkit-backface-visibility:hidden; backface-visibility:hidden;
 	-webkit-transform-origin:center; transform-origin:center; }

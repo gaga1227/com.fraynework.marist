@@ -3,35 +3,7 @@
         "y": "2014",
         "m": "January",
         "entries": [
-            {
-                "title": "MLK Jr Holiday - No Classes - Office Closed",
-                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
-                "d": "26",
-                "articleID": "e002",
-                "cate": "Conferences, Colloquiums, Meetings"
-            },
-            {
-                "title": "No Homeroom; No 7th Period",
-                "d": "25",
-                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
-                "articleID": "e004",
-                "cate": "Retreats"
-            },
-            {
-                "title": "Boys Basketball Breakfast",
-                "d": "15",
-                "desc": "",
-                "articleID": "e005",
-                "cate": "Student Events"
-            },
-            {
-                "title": "Brother Emili Turu, Superior General, Marist Brothers Rome - Silence in the City",
-                "d": "30",
-                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
-                "articleID": "e010",
-                "cate": "Conferences, Colloquiums, Meetings"
-            },
-            {
+			{
                 "title": "Dr Paul Sharkey, Director of Catholic Education, SA",
                 "d": "01",
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
@@ -44,7 +16,35 @@
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
                 "articleID": "e030",
                 "cate": "Conferences, Colloquiums, Meetings"
+            },
+            {
+                "title": "Boys Basketball Breakfast",
+                "d": "15",
+                "articleID": "e005",
+                "cate": "Student Events"
+            },
+            {
+                "title": "No Homeroom; No 7th Period",
+                "d": "25",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "articleID": "e004",
+                "cate": "Retreats"
+            },
+			{
+                "title": "MLK Jr Holiday - No Classes - Office Closed",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "d": "26",
+                "articleID": "e002",
+                "cate": "Conferences, Colloquiums, Meetings"
+            },
+            {
+                "title": "Brother Emili Turu, Superior General, Marist Brothers Rome - Silence in the City",
+                "d": "30",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "articleID": "e010",
+                "cate": "Conferences, Colloquiums, Meetings"
             }
+
         ]
     },
     {
@@ -59,9 +59,21 @@
                 "cate": "Conferences, Colloquiums, Meetings"
             },
             {
+                "title": "Orientation day for new students and parents",
+                "d": "02",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "articleID": "e041",
+                "cate": "Student Events"
+            },
+            {
+                "title": "National Marist Faith Formators' Colloquium TAS",
+                "d": "05",
+                "articleID": "e034",
+                "cate": "Conferences, Colloquiums, Meetings"
+            },
+            {
                 "title": "Being Marist Conference, Melbourne",
                 "d": "24",
-                "desc": "",
                 "articleID": "e023a",
                 "cate": "Staff Programmes"
             },
@@ -78,20 +90,6 @@
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
                 "articleID": "e023c",
                 "cate": "Staff Programmes"
-            },
-            {
-                "title": "National Marist Faith Formators' Colloquium TAS",
-                "d": "05",
-                "desc": "",
-                "articleID": "e034",
-                "cate": "Conferences, Colloquiums, Meetings"
-            },
-            {
-                "title": "Orientation day for new students and parents",
-                "d": "02",
-                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
-                "articleID": "e041",
-                "cate": "Student Events"
             }
         ]
     },
@@ -107,18 +105,17 @@
                 "cate": "Conferences, Colloquiums, Meetings"
             },
             {
-                "title": "Admissions Shadow Day",
-                "d": "18",
-                "desc": "",
-                "articleID": "e003",
-                "cate": "Student Events"
-            },
-            {
                 "title": "Brother EmiliTuru, Superior General, Marist Brothers Rome - Brooke Fraser; Albertine Music Video",
                 "d": "12",
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
                 "articleID": "e008",
                 "cate": "Conferences, Colloquiums, Meetings"
+            },
+            {
+                "title": "Admissions Shadow Day",
+                "d": "18",
+                "articleID": "e003",
+                "cate": "Student Events"
             }
         ]
     },
@@ -127,18 +124,17 @@
         "m": "April",
         "entries": [
             {
+                "title": "National Marist Faith Formators' Colloquium VIC",
+                "d": "02",
+                "articleID": "e031",
+                "cate": "Conferences, Colloquiums, Meetings"
+            },
+            {
                 "title": "Class 6 Party",
                 "d": "30",
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
                 "articleID": "e006",
                 "cate": "Student Events"
-            },
-            {
-                "title": "National Marist Faith Formators' Colloquium VIC",
-                "d": "02",
-                "desc": "",
-                "articleID": "e031",
-                "cate": "Conferences, Colloquiums, Meetings"
             }
         ]
     },
@@ -154,23 +150,14 @@
                 "cate": "Conferences, Colloquiums, Meetings"
             },
             {
-                "title": "Dr Michele Connolly rsj - Magnificat",
-                "d": "19",
-                "desc": "",
-                "articleID": "e013",
-                "cate": "Staff Programmes"
+                "title": "Exam Results Announcement",
+                "d": "17",
+                "articleID": "e038",
+                "cate": "Student Events"
             },
-            {
-                "title": "Dr Michele Connolly rsj - Luke 4:16-22",
-                "d": "24",
-                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
-                "articleID": "e015",
-                "cate": "Staff Programmes"
-            },
-            {
+			{
                 "title": "Open Day 1",
                 "d": "18",
-                "desc": "",
                 "articleID": "e036",
                 "cate": "Student Events"
             },
@@ -181,12 +168,18 @@
                 "articleID": "e037",
                 "cate": "Student Events"
             },
+			{
+                "title": "Dr Michele Connolly rsj - Magnificat",
+                "d": "19",
+                "articleID": "e013",
+                "cate": "Staff Programmes"
+            },
             {
-                "title": "Exam Results Announcement",
-                "d": "17",
-                "desc": "",
-                "articleID": "e038",
-                "cate": "Student Events"
+                "title": "Dr Michele Connolly rsj - Luke 4:16-22",
+                "d": "24",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "articleID": "e015",
+                "cate": "Staff Programmes"
             }
         ]
     },
@@ -195,20 +188,6 @@
         "m": "June",
         "entries": [
             {
-                "title": "Brother Jeff Crowe, Provincial, Marist Brothers Province of Australia",
-                "d": "24",
-                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
-                "articleID": "e009",
-                "cate": "Conferences, Colloquiums, Meetings"
-            },
-            {
-                "title": "Julia Lederwacsh",
-                "d": "05",
-                "desc": "",
-                "articleID": "e014",
-                "cate": "Retreats"
-            },
-            {
                 "title": "McAuley Champagnat Programme Workshop A1",
                 "d": "01",
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
@@ -216,18 +195,16 @@
                 "cate": "Staff Programmes"
             },
             {
-                "title": "MLK Jr Holiday - No Classes - Office Closed",
-                "d": "25",
-                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
-                "articleID": "e022",
-                "cate": "Staff Programmes"
-            },
-            {
                 "title": "National Marist Faith Formators' Colloquium QLD",
                 "d": "04",
-                "desc": "",
                 "articleID": "e033",
                 "cate": "Conferences, Colloquiums, Meetings"
+            },
+            {
+                "title": "Julia Lederwacsh",
+                "d": "05",
+                "articleID": "e014",
+                "cate": "Retreats"
             },
             {
                 "title": "Annual Sports Day",
@@ -235,6 +212,20 @@
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
                 "articleID": "e039",
                 "cate": "Student Events"
+            },
+            {
+                "title": "Brother Jeff Crowe, Provincial, Marist Brothers Province of Australia",
+                "d": "24",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "articleID": "e009",
+                "cate": "Conferences, Colloquiums, Meetings"
+            },
+            {
+                "title": "MLK Jr Holiday - No Classes - Office Closed",
+                "d": "25",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "articleID": "e022",
+                "cate": "Staff Programmes"
             }
         ]
     },
@@ -243,6 +234,13 @@
         "m": "July",
         "entries": [
             {
+                "title": "National Marist Faith Formators' Colloquium SA",
+                "d": "03",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "articleID": "e032",
+                "cate": "Conferences, Colloquiums, Meetings"
+            },
+		    {
                 "title": "McAuley Champagnat Programme Workshop A2",
                 "d": "07",
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
@@ -252,7 +250,6 @@
             {
                 "title": "Footsteps1 - Making Jesus Christ Known and Loved",
                 "d": "27",
-                "desc": "",
                 "articleID": "e024",
                 "cate": "Staff Programmes"
             },
@@ -262,13 +259,6 @@
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
                 "articleID": "e025",
                 "cate": "Staff Programmes"
-            },
-            {
-                "title": "National Marist Faith Formators' Colloquium SA",
-                "d": "03",
-                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
-                "articleID": "e032",
-                "cate": "Conferences, Colloquiums, Meetings"
             }
         ]
     },
@@ -277,18 +267,17 @@
         "m": "August",
         "entries": [
             {
-                "title": "In the Champagnat Way: New Staff Induction - EASTERN REGION SYDNEY, NSW",
-                "d": "20",
-                "desc": "",
-                "articleID": "e026",
-                "cate": "Staff Programmes"
-            },
-            {
                 "title": "Safari Trip Day",
                 "d": "02",
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
                 "articleID": "e040",
                 "cate": "Student Events"
+            },
+		    {
+                "title": "In the Champagnat Way: New Staff Induction - EASTERN REGION SYDNEY, NSW",
+                "d": "20",
+                "articleID": "e026",
+                "cate": "Staff Programmes"
             }
         ]
     },
@@ -296,13 +285,6 @@
         "y": "2014",
         "m": "September",
         "entries": [
-            {
-                "title": "McAuley Champagnat Programme Workshop A3",
-                "d": "13",
-                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
-                "articleID": "e018",
-                "cate": "Staff Programmes"
-            },
             {
                 "title": "In the Champagnat Way: New Staff Induction - FAR NORTH QLD",
                 "d": "02",
@@ -313,9 +295,15 @@
             {
                 "title": "National Marist Faith Formators' Colloquium NSW",
                 "d": "06",
-                "desc": "",
                 "articleID": "e035",
                 "cate": "Conferences, Colloquiums, Meetings"
+            },
+            {
+                "title": "McAuley Champagnat Programme Workshop A3",
+                "d": "13",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "articleID": "e018",
+                "cate": "Staff Programmes"
             }
         ]
     },
@@ -356,18 +344,18 @@
         "y": "2014",
         "m": "December",
         "entries": [
-            {
-                "title": "Graduate Certificate Programme - South Australia",
-                "d": "25",
-                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
-                "articleID": "e021",
-                "cate": "Staff Programmes"
-            },
-            {
+			{
                 "title": "In the Champagnat Way: New Staff Induction - MACARTHUR REGION SYDNEY, NSW",
                 "d": "02",
                 "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
                 "articleID": "e029",
+                "cate": "Staff Programmes"
+            },
+			{
+                "title": "Graduate Certificate Programme - South Australia",
+                "d": "25",
+                "desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
+                "articleID": "e021",
                 "cate": "Staff Programmes"
             }
         ]

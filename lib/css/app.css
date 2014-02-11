@@ -76,22 +76,23 @@ body {
 	.pageHeader .headerTitle {
 		display:block; position:relative; width:auto; height:auto; margin:0 50px; padding:0; overflow:hidden;
 		color:#fff; white-space:nowrap; text-overflow:ellipsis; text-transform:capitalize;
-		font-size:22px; font-weight:600; line-height:50px; text-align:center; }
+		font-size:24px; font-weight:400; line-height:55px; text-align:center; }
 	
 		/* headerTitle.small */
-		.pageHeader .headerTitle.small .secID 	{ display:block; font-size:20px; line-height:28px; margin-top:4px; }
-		.pageHeader .headerTitle.small .cateID 	{ display:block; font-size:13px; font-weight:400; line-height:1em; margin-bottom:5px; opacity:0.9; }
+		.pageHeader .headerTitle.small .secID,
+		.pageHeader .headerTitle.small .cateID 	{ display:block; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; }
+		.pageHeader .headerTitle.small .secID 	{ font-size:20px; line-height:28px; margin-top:4px; }
+		.pageHeader .headerTitle.small .cateID 	{ font-size:12px; line-height:16px; margin-bottom:7px; }
 	
 			/* headerTitle.hasFilter */
 			.pageHeader .headerTitle .secID .label { display:inline-block; position:relative; }
-			.pageHeader .headerTitle .secID .label .icon { right:0; bottom:0; font-size:14px; }
-	
+			.pageHeader .headerTitle .secID .label i { display:inline-block; width:1.2em; height:1em; vertical-align:middle; font-size:15px; line-height:0.75em; }
+			
 		/* filter */
 		.pageHeader .headerTitle select.filter { 
 			display:block; position:absolute; top:0; left:0; bottom:0; right:0; width:100%; height:100%;
-			border:0;
-			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;
-			opacity:0; }
+			border:0; opacity:0;
+			/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 
 	/* -------------------------------------------------------------------------- */
 	/* headerBtn */
@@ -374,21 +375,30 @@ section,
 
 
 /* ==========================================================================
-   common - DATEBLOCK
+   common - GROUPS
    ========================================================================== */
 
-.dateBlock {
-	position:absolute; width:50px; height:50px; margin:0; padding:0; overflow:hidden;
-	background:rgba(255,255,255,0.7); }
+/* -------------------------------------------------------------------------- */
+/* container */
+.group { width:auto; height:auto; margin:8px; padding:0; overflow:hidden; }
 
-	/* d,m */
-	.dateBlock .d,
-	.dateBlock .m {
-		display:block; width:100%; height:auto; margin:0; padding:0;
-		color:#333; font-weight:300; line-height:1.2em; text-align:center; text-transform:uppercase; }
-	.dateBlock .d { margin:10px 0 0 0; font-size:16px; }
-	.dateBlock .m { margin:0 0 0 0; font-size:16px; }
+	/* group - style */
+	.group > :first-child,
+	.group > :last-child 		{ /*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
+	.group > :first-child 		{ /*border-radius*/-webkit-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0; }
+	.group > .item:last-child 	{ /*border-radius*/-webkit-border-radius:0 0 5px 5px; border-radius:0 0 5px 5px; border-bottom:2px solid #e5e5e5; }
 
+	/* groupHeader */
+	.groupHeader { 
+		width:auto; height:35px; margin:0; padding:0 10px; overflow:hidden;
+		color:#fff;
+		font-size:14px; font-weight:300; line-height:35px; }
+	
+		/* content */
+		.groupHeader .m,
+		.groupHeader .y { display:block; max-width:45%; overflow:hidden; }
+		.groupHeader .m { float:left; }
+		.groupHeader .y { float:right; opacity:0.6; }
 
 /* ==========================================================================
    common - ITEMS
@@ -397,105 +407,60 @@ section,
 /* -------------------------------------------------------------------------- */
 /* container */
 .item {
-	display:block; position:relative; width:auto; height:auto; margin:0; padding:10px; overflow:hidden;
-	background-color:#ebebeb; border-bottom:1px solid #ccc;
+	display:block; position:relative; width:auto; height:auto; margin:0; padding:0; overflow:hidden;
+	background:#fff; border-bottom:1px solid #ededed;
 	text-decoration:none!important; }
-
-	/* -------------------------------------------------------------------------- */
-	/* imgThumb */
-	.item .imgThumb {
-		position:relative; width:62px; height:62px; margin:0; float:left; clear:left; overflow:hidden; }
-
-		/* img */
-		.item .imgThumb img {
-			display:block; position:absolute; top:0; left:50%; width:auto; height:100%; margin:0 0 0 -41px; }
 
 	/* -------------------------------------------------------------------------- */
 	/* dateBlock */
 	.item .dateBlock {
-		top:0; left:0; width:55px; height:100%;
-		background-color:#dcdcdc; }
+		position:absolute; top:50%; left:0; width:43px; height:30px; margin:-15px 0 0 0;
+		color:#333;	border-right:1px solid #e6e6e6;
+		font-size:21px; line-height:30px; text-align:center; }
 
 		/* d */
-		.item .dateBlock .d { margin-top:10px; }
-
-	/* -------------------------------------------------------------------------- */
-	/* content */
-	.item .content {
-		position:relative; width:auto; height:auto; padding:0;
-		font-weight:400; }
-	.item .content.hasIcon { 
-		margin-right:30px!important; }
-	
-		/* common */
-		.item .content p { margin:0; }
-
-		/* date */
-		.item .content .date {
-			overflow:hidden;
-			white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
-			color:#666; font-size:8px;  line-height:20px; }
-
-		/* title */
-		.item .content .title {
-			overflow:hidden;
-			color:#333; font-size:16px; line-height:1.2em; }
+		.item .dateBlock .d {  }
+		
+		/* m */
+		.item .dateBlock .m {  }
 
 	/* -------------------------------------------------------------------------- */
 	/* icon */
 	.item .icon {
-		top:50%; right:18px; width:14px; height:14px; margin:-7px 0 0 0; padding:0; overflow:hidden;
-		color:#999; font-size:14px; line-height:1em; }
+		top:50%; right:10px; width:1em; height:1em; margin:-0.5em 0 0 0; padding:0; overflow:hidden;
+		color:#ddd; font-size:20px; line-height:1em; }
+	
+	/* -------------------------------------------------------------------------- */
+	/* content */
+	.item .content {
+		width:auto; height:auto; min-height:34px; margin:14px 45px 14px 12px; padding:0;
+		font-weight:400; }
+	.item .dateBlock + .content { 
+		margin-left:55px; }
+	
+		/* common */
+		.item .content p { margin:0; overflow:hidden; /*white-space:nowrap; text-overflow:ellipsis;*/ }
+
+		/* title */
+		.item .content .title { color:#333; font-size:14px; line-height:18px; margin-top:-2px; }
+		
+		/* desc */
+		.item .content .desc { color:#aaa; font-size:12px; line-height:16px; }
 
 /* -------------------------------------------------------------------------- */
 /* interaction */
-.item.active { background-color:#fff; background-image:none; border-color:#fff; }
-.item.active .dateBlock { background:#fff; }
+.item.active p,
+.item.active .icon,
+.item.active .dateBlock { color:#fff!important; border-style-color:#fff!important; }
 
 /* -------------------------------------------------------------------------- */
 /* custom */
 
-/* news */
-.item.news .content 				{ margin:0 0 0 60px; }
-.item.news .content .title 			{ min-height:38px;/*2 lines*/ }
-/* events */
-.item.events .content 				{ margin:0 0 0 60px; }
-.item.events .content .title 		{ min-height:38px;/*2 lines*/ }
-/* programmes */
-.item.programmes .dateBlock 		{ display:none; }
-.item.programmes .content 			{ margin:0; }
-.item.programmes .content .title	{ min-height:19px;/*1 lines*/ }
 
 
 /* ==========================================================================
    common - BUTTONS
    ========================================================================== */
-
-/* -------------------------------------------------------------------------- */
-/* btnText */
-.btnText {
-	display:inline-block; position:relative; width:auto; height:auto; margin:0 20px 20px 0; padding:0; overflow:hidden;
-	color:#fff; white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
-	font-family:'LeagueGothic',sans-serif; font-size:20px; font-weight:400; line-height:1em;
-	text-decoration:none!important; }
-	.btnText .label { text-decoration:none!important; vertical-align:middle; }
-	.btnText .iconInline { vertical-align:middle; }
-
-/* interaction */
-.btnText.active { color:#ccc; }
-
-/* -------------------------------------------------------------------------- */
-/* btnBox */
-.btnBox {
-	display:inline-block; position:relative; width:auto; height:20px; margin:0; padding:8px 18px; overflow:hidden;
-	color:#333!important; border:1px solid #333; white-space:nowrap; text-overflow:ellipsis; text-transform:uppercase;
-	font-family:'Alegreya',serif; font-size:13px; font-weight:400; line-height:20px;
-	text-decoration:none!important; }
-	.btnBox .label { text-decoration:none!important; }
-	.btnBox .iconInline { font-size:14px; vertical-align:text-top; }
-
-/* interaction */
-.btnBox.active { color:#fff!important; background:#333; border-color:#333; }
 
 
 /* ==========================================================================
@@ -910,11 +875,9 @@ section,
    ========================================================================== */
 .debug { 
 	/*display:none!important;*/
-	display:block; position:absolute; top:0; left:0; margin:-8px 0 0 0;
+	display:block; position:absolute; top:0; left:0; margin:0;
 	color:#bbb; text-transform:uppercase;
 	font-size:10px; line-height:1em; }
-.item .debug { 
-	margin-top:-8px!important; }
 
 
 /* ==========================================================================

@@ -13,44 +13,49 @@
 		<div class="scroller" data-role="scroller"
 			ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="(entries | filter:section.listFilter).length"
 			bindonce="entries" bo-switch="section.id">
-			<!-- PROGRAMMES -->
-			<div data-role="scrollerContent" bo-switch-when="programmes">
-				<a 	class="item" data-role="button"
-					bo-class="section.id"
-					ng-repeat="entry in entries | filter:section.listFilter | orderBy:section.order"
-					bo-href="'#' + section.id + '/article/' + entry.articleID">
-					<div class="content">
-						<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
-						<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
-					</div>
-					<i class="icon typcn-chevron-right"></i>
-				</a>
-			</div>
-			<!-- PUBLICATIONS/LINKS -->
-			<div data-role="scrollerContent" bo-switch-when="publications">
-				<a 	class="item" data-role="button" data-link="external"
-					bo-class="section.id"
-					ng-repeat="entry in entries | filter:section.listFilter | orderBy:section.order"
-					bo-href="entry.link">
-					<div class="content">
-						<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
-						<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
-					</div>
-					<i class="icon typcn-chevron-right"></i>
-				</a>
-			</div>
-			<!-- LINKS -->
-			<div data-role="scrollerContent" bo-switch-when="links">
-				<a 	class="item" data-role="button" data-link="external"
-					bo-class="section.id"
-					ng-repeat="entry in entries | filter:section.listFilter | orderBy:section.order"
-					bo-href="entry.link">
-					<div class="content">
-						<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
-						<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
-					</div>
-					<i class="icon typcn-chevron-right"></i>
-				</a>
+			<div data-role="scrollerContent">
+				<!-- PROGRAMMES -->
+				<div class="group" bo-switch-when="programmes">
+					<a class="item activebgc-4" data-role="button"
+						ng-repeat="entry in entries | filter:section.listFilter | orderBy:section.order"
+						bo-class="section.id"
+						bo-href="'#' + section.id + '/article/' + entry.articleID">
+						<div class="content">
+							<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
+							<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
+							<p class="desc" bo-text="entry.desc" bo-if="entry.desc"></p>
+						</div>
+						<i class="icon typcn-chevron-right"></i>
+					</a>
+				</div>
+				<!-- PUBLICATIONS/LINKS -->
+				<div class="group" bo-switch-when="publications">
+					<a class="item activebgc-4" data-role="button" data-link="external"
+						bo-class="section.id"
+						ng-repeat="entry in entries | filter:section.listFilter | orderBy:section.order"
+						bo-href="entry.link">
+						<div class="content">
+							<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
+							<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
+							<p class="desc" bo-text="entry.desc" bo-if="entry.desc"></p>
+						</div>
+						<i class="icon typcn-download"></i>
+					</a>
+				</div>
+				<!-- LINKS -->
+				<div class="group" bo-switch-when="links">
+					<a class="item activebgc-4" data-role="button" data-link="external"
+						bo-class="section.id"
+						ng-repeat="entry in entries | filter:section.listFilter | orderBy:section.order"
+						bo-href="entry.link">
+						<div class="content">
+							<p class="debug" bo-text="$index + ': ' + entry.articleID"></p>
+							<p class="title" bo-text="entry.title | limitTo:charLimit"></p>
+							<p class="desc" bo-text="entry.desc" bo-if="entry.desc"></p>
+						</div>
+						<i class="icon typcn-chevron-right"></i>
+					</a>
+				</div>
 			</div>
 			<div class="acenter" bo-if="!(entries | filter:section.listFilter).length"><h3>No current record in this category</h3></div>
 		</div>

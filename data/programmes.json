@@ -1,61 +1,73 @@
 [
 	{ 
 		"title": 	"Dr Paul Sharkey, Director of Catholic Education, SA",
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p012",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Dr Michele Connolly rsj - Magnificat", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p013",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Dr Michele Connolly rsj - Luke 4:16-22", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p015",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"McAuley Champagnat Programme Workshop A1", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p016",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"McAuley Champagnat Programme Workshop A2",
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p017",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"McAuley Champagnat Programme Workshop A3", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p018",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Marist: Our Way of Being Catholic",
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p019",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Graduate Certificate Programme - South Australia", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p021",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"MLK Jr Holiday - No Classes - Office Closed",
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p022",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Being Marist Conference", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p023",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Footsteps1 - Making Jesus Christ Known and Loved",
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p024",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Footsteps2 - Making Jesus Christ Known and Loved", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p025",
 		"cate":		"Staff Programmes" 
 	},
@@ -66,6 +78,7 @@
 	},
 	{ 
 		"title": 	"In the Champagnat Way: New Staff Induction - FAR NORTH QLD",
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p027",
 		"cate":		"Staff Programmes" 
 	},
@@ -76,21 +89,25 @@
 	},
 	{ 
 		"title": 	"In the Champagnat Way: New Staff Induction - MACARTHUR REGION SYDNEY, NSW", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p029",
 		"cate":		"Staff Programmes" 
 	},
 	{ 
 		"title": 	"Schools of the Spirit", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p051",
 		"cate":		"Additional Programmes by Request" 
 	},
 	{ 
 		"title": 	"Marist Spirituality", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p052",
 		"cate":		"Additional Programmes by Request" 
 	},
 	{ 
 		"title": 	"Marist Pedagogy", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p053",
 		"cate":		"Additional Programmes by Request" 
 	},
@@ -101,6 +118,7 @@
 	},
 	{ 
 		"title": 	"Mary, the Mature Disciple", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p055",
 		"cate":		"Additional Programmes by Request" 
 	},
@@ -111,6 +129,7 @@
 	},
 	{ 
 		"title": 	"Champagnat's Letters and Patrimony", 
+		"desc": "Lorem ipsum dolor sit amet sed do eiusmod tempor incididunt",
 		"articleID":"p057",
 		"cate":		"Additional Programmes by Request" 
 	},

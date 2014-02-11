@@ -4,9 +4,9 @@
 		<a href="#menu" class="headerBtn right btnMenu" data-role="button"><i class="icon typcn-th-menu"></i></a>
 	</div>
 	<div class="pageContent" data-role="content">
-		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="section.articleHTML">
-			<div class="contentView padded" data-role="scrollerContent" 
-			bo-html="'<span class=&quot;debug&quot;>' + section.articleID + '</span>' + section.articleHTML"></div>
+		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800">
+			<div data-role="scrollerContent" 
+				bo-html="'<span class=&quot;debug&quot;>' + section.articleID + '</span>' + section.articleHTML"></div>
 		</div>
 	</div>
 </div>
