@@ -273,7 +273,9 @@ section,
 /* container */
 .contentView {
 	color:#333; background:none;
-	font-family:'roboto',sans-serif; }
+	font-family:'roboto',sans-serif; font-weight:300; }
+.contentView.article { 
+	background:#fff; border-bottom:2px solid #e1e1e1; }
 
 	/* -------------------------------------------------------------------------- */
 	/* content */
@@ -286,18 +288,18 @@ section,
 	.contentView li:last-child 	{ margin-bottom:0!important; }
 
 	/* headings */
-	.contentView h1 			{ font-size:22px; line-height:1.10em; margin:0 0 0.60em 0; padding:0.30em 0 0 0; }
-	.contentView h2 			{ font-size:20px; line-height:1.10em; margin:0 0 0.65em 0; padding:0.32em 0 0 0; }
-	.contentView h3 			{ font-size:18px; line-height:1.15em; margin:0 0 0.70em 0; padding:0.35em 0 0 0; }
-	.contentView h4 			{ font-size:16px; line-height:1.15em; margin:0 0 0.80em 0; padding:0.40em 0 0 0; }
+	.contentView h1 			{ font-size:24px; line-height:1.10em; margin:0 0 0.60em 0; padding:0.30em 0 0 0; }
+	.contentView h2 			{ font-size:22px; line-height:1.10em; margin:0 0 0.65em 0; padding:0.32em 0 0 0; }
+	.contentView h3 			{ font-size:20px; line-height:1.15em; margin:0 0 0.70em 0; padding:0.35em 0 0 0; }
+	.contentView h4 			{ font-size:18px; line-height:1.15em; margin:0 0 0.80em 0; padding:0.40em 0 0 0; }
 
 	/* text */
-	.contentView b				{ font-weight:600; }
+	.contentView b				{ font-weight:400; }
 	.contentView strong			{ font-weight:700; }
 	.contentView i,
 	.contentView em				{ font-style:italic; }
-	.contentView p 				{ font-size:13px; line-height:1.23em; margin:0 0 1em 0; padding:0; }
-	.contentView p.sml 			{ font-size:11px; line-height:1.23em; margin:0 0 0.5em 0; padding:0; }
+	.contentView p 				{ font-size:16px; line-height:1.25em; margin:0 0 1em 0; padding:0; }
+	.contentView p.sml 			{ font-size:13px; line-height:1.25em; margin:0 0 0.5em 0; padding:0; }
 
 	/* link */
 	.contentView a 				{ color:#007bc0!important; text-decoration:underline!important; }
@@ -306,7 +308,7 @@ section,
 	.contentView img 			{ display:block; width:100%; height:auto; margin:0 0 1em 0; border:0; }
 
 	/* list */
-	.contentView li 			{ font-size:13px; line-height:1.23em; margin:0 0 0.5em 0; }
+	.contentView li 			{ font-size:16px; line-height:1.25em; margin:0 0 0.5em 0; }
 	.contentView ol,
 	.contentView ul				{ margin:0 0 1em 0; padding:0 0 0 20px; }
 	.contentView ul				{ list-style-type:disc; }
@@ -315,20 +317,46 @@ section,
 
 	/* -------------------------------------------------------------------------- */
 	/* text styles */
-	.contentView .date { color:#666; font-family:'Montserrat',sans-serif; font-size:10px; font-weight:700; text-transform:uppercase; }
 	
 	/* -------------------------------------------------------------------------- */
 	/* cogs */
 	
-	/* btnItem */
-	.contentView a.btnItem {
-		display:block; position:relative; width:auto; height:auto; margin:1px 0; padding:6px 12px; overflow:hidden;
-		color:#333!important; background:#f2f2f2;
-		font-size:13px; font-weight:400; line-height:1.3em;
-		text-decoration:none!important; outline:0 none!important; }
-	.contentView a.btnItem.active {
-		color:#fff!important; background:#1badf8; }		
+
+/* ==========================================================================
+   common - SUMMARY VIEW
+   ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* container */
+.summaryView { 
+	display:block; position:relative; width:auto; height:auto; margin:0; padding:0; overflow:hidden; }
 	
+	/* -------------------------------------------------------------------------- */
+	/* headings */
+	.summaryView .title,
+	.summaryView .desc {
+		width:auto; height:auto; margin:0 20px; padding:0;
+		color:#fff; font-size:30px; font-weight:300; line-height:1.1em; }
+	.summaryView .title { margin-top:0.5em; }
+	.summaryView .btmGap { margin-bottom:0.5em; }
+	
+	/* -------------------------------------------------------------------------- */
+	/* info */
+	.summaryView .info { 
+		display:block; position:relative; width:auto; height:auto; margin:0; padding:10px 20px 11px 50px; overflow:hidden;
+		color:#fff; border-top:1px solid rgba(255,255,255,0.4);
+		font-size:15px; font-weight:300; line-height:1.2em;
+		text-decoration:none!important; }
+	.summaryView .info:first-child,
+	.summaryView .title + .info,
+	.summaryView .desc + .info { 
+		border-top:2px solid rgba(0,0,0,0.05); }
+	
+		/* icon */
+		.summaryView .info .icon { 
+			top:10px; left:20px; width:1em; height:1em;
+			font-size:21px; line-height:1em; }
+
 
 /* ==========================================================================
    common - FORMVIEW
@@ -379,6 +407,12 @@ section,
    ========================================================================== */
 
 /* -------------------------------------------------------------------------- */
+/* group title */
+.groupTitle { 
+	display:block; width:auto; height:auto; margin:0.6em 20px 0.5em 20px; padding:0; overflow:hidden;
+	color:#4c4c4c; font-size:19px; font-weight:700; line-height:1.2em; }
+
+/* -------------------------------------------------------------------------- */
 /* container */
 .group { width:auto; height:auto; margin:8px; padding:0; overflow:hidden; }
 
@@ -400,6 +434,7 @@ section,
 		.groupHeader .m { float:left; }
 		.groupHeader .y { float:right; opacity:0.6; }
 
+
 /* ==========================================================================
    common - ITEMS
    ========================================================================== */
@@ -417,12 +452,11 @@ section,
 		position:absolute; top:50%; left:0; width:43px; height:30px; margin:-15px 0 0 0;
 		color:#333;	border-right:1px solid #e6e6e6;
 		font-size:21px; line-height:30px; text-align:center; }
-
-		/* d */
-		.item .dateBlock .d {  }
 		
 		/* m */
-		.item .dateBlock .m {  }
+		.item .dateBlock .m { 
+			color:#b2b2b2; text-transform:uppercase;
+			font-size:11px; }
 
 	/* -------------------------------------------------------------------------- */
 	/* icon */
@@ -456,6 +490,9 @@ section,
 /* -------------------------------------------------------------------------- */
 /* custom */
 
+/*related*/
+.item.related .title { margin-top:0; font-size:16px; line-height:34px; }
+.item.related .dateBlock { line-height:0.7em; }
 
 
 /* ==========================================================================
@@ -479,14 +516,6 @@ section,
 .iconInline 		{ display:inline-block; position:relative; padding:0 5px; }
 .iconInlineLeft 	{ padding:0 5px 0 0; text-align:left; }
 .iconInlineRight	{ padding:0 0 0 5px; text-align:right; }
-
-/* -------------------------------------------------------------------------- */
-/* iconLabel */
-.iconLabel:after {
-	content:attr(data-content);
-	font-style:normal; text-align:center;
-	text-decoration:none;
-	-webkit-font-smoothing:antialiased; speak:none; }
 
 
 /* ==========================================================================

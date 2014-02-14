@@ -1,9 +1,9 @@
-<div data-role="page" class="page" bindonce="section" bo-id="'pg' + (section.id | capitalize)" bo-class="section.theme">
+<div data-role="page" id="pgPage" class="page" bindonce="section" bo-class="section.theme">
 	<div class="pageHeader bgc-2" data-role="header">
 		<a href="#menu" class="headerBtn right btnMenu" data-role="button"><i class="icon typcn-th-menu"></i></a>
 	</div>
 	<div class="pageContent" data-role="content">
-		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800" ng-iscroll-refresher="section.pageHTML">
+		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800">
 			<div class="contentView padded" data-role="scrollerContent" 
 				bo-html="'<span class=&quot;debug&quot;>' + section.pageID + '</span>' + section.pageHTML"></div>
 		</div>

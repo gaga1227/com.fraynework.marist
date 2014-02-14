@@ -1,12 +1,66 @@
-<div data-role="page" class="page" bindonce="section" bo-id="'pg' + (section.id | capitalize)" bo-class="section.theme">
+<div data-role="page" id="pgArticle" class="page" bindonce="section" bo-class="section.theme">
 	<div class="pageHeader bgc-2" data-role="header">
 		<a href="javascript:window.history.back();" class="headerBtn left btnBack" data-role="button"><i class="icon typcn-chevron-left"></i></a>
 		<a href="#menu" class="headerBtn right btnMenu" data-role="button"><i class="icon typcn-th-menu"></i></a>
 	</div>
 	<div class="pageContent" data-role="content">
 		<div class="scroller" data-role="scroller" ng-iscroll="pageContentScroller" ng-iscroll-delay="800">
-			<div data-role="scrollerContent" 
-				bo-html="'<span class=&quot;debug&quot;>' + section.articleID + '</span>' + section.articleHTML"></div>
+			<div data-role="scrollerContent">
+				<!-- SUMMARYVIEW -->
+				<div class="summaryView bgc-2">
+					<h1 class="title" 
+						bo-if="section.article.title" 
+						bo-text="section.article.title" 
+						bo-class="{btmGap: !section.article.desc}"></h1>
+					<h2 class="desc c-4 btmGap" 
+						bo-if="section.article.desc" 
+						bo-text="section.article.desc"></h2>
+					<div class="info bgc-3" 
+						bo-if="section.article.location">
+						<i class="icon c-4 typcn-map"></i>
+						<span bo-text="section.article.location"></span>
+					</div>
+					<div class="info bgc-3" 
+						bo-if="section.article.date">
+						<i class="icon c-4 typcn-calender-outline"></i>
+						<span bo-text="section.article.date"></span>
+					</div>
+					<div class="info bgc-3" 
+						bo-if="section.article.cost">
+						<i class="icon c-4 typcn-ticket"></i>
+						<span bo-text="section.article.cost"></span>
+					</div>
+					<a class="info bgc-3 activebgc-1" 
+						bo-if="section.article.contact" 
+						bo-href="'mailto:' + section.article.contact" data-role="button">
+						<i class="icon c-4 typcn-mail"></i>
+						<span bo-text="section.article.contact"></span>
+					</a>
+				</div>
+				<!-- CONTENTVIEW -->
+				<div class="contentView padded article" 
+					bo-if="section.article.html" bo-html="section.article.html"></div>
+				<!-- RELATED ENTRIES -->
+				<h3 class="groupTitle"
+					bo-if="section.article.events.length">Dates</h3>
+				<div class="group" 
+					bo-if="section.article.events.length">
+					<!-- ITEMS -->
+					<a class="item related activebgc-4" data-role="button" 
+						ng-repeat="entry in section.article.events"
+						bindonce="entry" bo-href="'#events/article/' + entry.id">
+						<div class="dateBlock">
+							<span class="d" bo-if="entry.d" bo-text="entry.d"></span>
+							<span class="m" bo-if="entry.m" bo-text="entry.m"></span>
+						</div>
+						<div class="content">
+							<p class="title" bo-text="entry.location"></p>
+							<p class="title" bo-if="!entry.location">TBC</p>
+						</div>
+						<i class="icon typcn-chevron-right"></i>
+					</a>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
