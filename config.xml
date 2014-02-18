@@ -68,5 +68,5 @@
     <gap:splash src="res/screen/android/screen-xhdpi-portrait.png" gap:platform="android" gap:density="xhdpi" />
 	
 	<!-- Access -->
-	<access />
+	<access origin="*" />
 </widget>
