@@ -1,1 +1,2 @@
-The contents in this folder are samples and for local development purposes only.
+- The json contents in this folder are sample references and for local development purposes only.
+- 'pages' folder contains all local pages data 
