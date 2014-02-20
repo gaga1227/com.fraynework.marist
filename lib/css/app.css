@@ -58,6 +58,7 @@ body {
 	position:absolute; top:0; left:0; width:100%; height:100%; margin:0; padding:0; overflow:hidden; }
 
 /* page.bg */
+body.bg,
 .page.bg { 
 	background:#373d49 url(../img/bg-brand-home.jpg) center top no-repeat; background-size:contain; }
 	
