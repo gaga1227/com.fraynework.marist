@@ -1,5 +1,7 @@
 <div id="pgHome" data-role="page" class="page bg">
+	<!-- BRAND -->
 	<div class="brand"></div>
+	<!-- MENU -->
 	<div class="menu">
 		<a href="#events" class="menuItem typcn-flag-outline" data-role="button"><span class="label">Events</span></a>
 		<a href="#programmes" class="menuItem typcn-star-outline" data-role="button"><span class="label">Programmes</span></a>
@@ -8,9 +10,10 @@
 		<a href="#links" class="menuItem sml typcn-device-desktop" data-role="button"><span class="label">Links</span></a>
 		<a href="#localpage/about" class="menuItem sml typcn-mortar-board" data-role="button"><span class="label">About</span></a>
 	</div>
-	<a class="alert" data-role="button" ng-click="gotoAlert(alert.id)" bindonce="alert">
-		<i class="icon" bo-class="alert.icon"></i>
-		<span class="label" bo-text="alert.label"></span>
-		<span class="title" bo-text="alert.title | limitTo:charLimit"></span>
-	</a>
+	<!-- ALERT -->
+	<div class="notif" data-role="button" ng-click="onNotifClick()" bindonce="notif">
+		<i class="icon" bo-class="notif.icon"></i>
+		<span class="label" bo-text="notif.label"></span>
+		<span class="title" bo-text="notif.title | limitTo:charLimit"></span>
+	</div>
 </div>
