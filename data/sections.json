@@ -1,4 +1,4 @@
-{
+[{
 	"events": [ 
 		{ "value": "Show All" },
 		{ "value": "Conferences, Colloquiums, Meetings" },
@@ -23,4 +23,4 @@
 	"links": [ 
 			
 	]
-}
+}]
