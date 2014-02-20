@@ -12,7 +12,7 @@
 	-webkit-transform-origin:center; transform-origin:center; }
 
 /* fix CSS glitch on android */
-.android .view { -webkit-transition-delay:0.5s; transition-delay:0.5s; }
+.android .view { -webkit-transition-delay:1s; transition-delay:1s; }
 
 /* -------------------------------------------------------------------------- */
 /* fade */
