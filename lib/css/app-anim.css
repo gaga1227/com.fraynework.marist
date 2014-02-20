@@ -11,6 +11,9 @@
 	-webkit-backface-visibility:hidden; backface-visibility:hidden;
 	-webkit-transform-origin:center; transform-origin:center; }
 
+/* fix CSS glitch on android */
+.android .view { -webkit-transition-delay:0.1s; transition-delay:0.1s; }
+
 /* -------------------------------------------------------------------------- */
 /* fade */
 
