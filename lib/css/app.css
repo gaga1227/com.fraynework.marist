@@ -155,7 +155,7 @@ body.bg,
 	.menuList .menuItem {
 		display:block; position:relative; width:auto; height:auto; margin:0 20px; padding:15px 0;
 		color:#fff; border-top:1px solid rgba(255,255,255,0.2);
-		font-size:18px; line-height:1.5em; }
+		font-size:19px; line-height:1.5em; }
 	.menuList .menuItem:first-child { 
 		border-top:none; }
 
@@ -295,23 +295,23 @@ section,
 	.contentView h4 			{ font-size:18px; line-height:1.15em; margin:0 0 0.80em 0; padding:0.40em 0 0 0; }
 
 	/* text */
-	.contentView b				{ font-weight:400; }
+	.contentView b				{ font-weight:600; }
 	.contentView strong			{ font-weight:700; }
 	.contentView i,
 	.contentView em				{ font-style:italic; }
-	.contentView p 				{ font-size:16px; line-height:1.25em; margin:0 0 1em 0; padding:0; }
-	.contentView p.sml 			{ font-size:13px; line-height:1.25em; margin:0 0 0.5em 0; padding:0; }
+	.contentView p 				{ font-size:17px; line-height:1.25em; margin:0 0 0.7em 0; padding:0; }
+	.contentView p.sml 			{ font-size:14px; line-height:1.25em; margin:0 0 0.5em 0; padding:0; }
 
 	/* link */
 	.contentView a 				{ color:#007bc0!important; text-decoration:underline!important; }
 
 	/* media */
-	.contentView img 			{ display:block; width:100%; height:auto; margin:0 0 1em 0; border:0; }
+	.contentView img 			{ display:block; width:100%; height:auto; margin:0 0 0.7em 0; border:0; }
 
 	/* list */
-	.contentView li 			{ font-size:16px; line-height:1.25em; margin:0 0 0.5em 0; }
+	.contentView li 			{ font-size:17px; line-height:1.25em; margin:0 0 0.5em 0; }
 	.contentView ol,
-	.contentView ul				{ margin:0 0 1em 0; padding:0 0 0 20px; }
+	.contentView ul				{ margin:0 0 0.7em 0; padding:0 0 0 20px; }
 	.contentView ul				{ list-style-type:disc; }
 	.contentView li ol,
 	.contentView li ul			{ margin:0.5em 0 0 0; }
@@ -427,7 +427,7 @@ section,
 	.groupHeader { 
 		width:auto; height:35px; margin:0; padding:0 10px; overflow:hidden;
 		color:#fff;
-		font-size:14px; font-weight:300; line-height:35px; }
+		font-size:16px; font-weight:300; line-height:35px; }
 	
 		/* content */
 		.groupHeader .m,
@@ -452,7 +452,7 @@ section,
 	.item .dateBlock {
 		position:absolute; top:50%; left:0; width:43px; height:30px; margin:-15px 0 0 0;
 		color:#333;	border-right:1px solid #e6e6e6;
-		font-size:21px; line-height:30px; text-align:center; }
+		font-size:26px; line-height:30px; text-align:center; }
 		
 		/* m */
 		.item .dateBlock .m { 
@@ -468,8 +468,7 @@ section,
 	/* -------------------------------------------------------------------------- */
 	/* content */
 	.item .content {
-		width:auto; height:auto; min-height:34px; margin:14px 45px 14px 12px; padding:0;
-		font-weight:400; }
+		width:auto; height:auto; min-height:34px; margin:14px 45px 14px 12px; padding:0; }
 	.item .dateBlock + .content { 
 		margin-left:55px; }
 	
@@ -477,10 +476,10 @@ section,
 		.item .content p { margin:0; overflow:hidden; /*white-space:nowrap; text-overflow:ellipsis;*/ }
 
 		/* title */
-		.item .content .title { color:#333; font-size:14px; line-height:18px; margin-top:-2px; }
+		.item .content .title { color:#333; font-size:16px; line-height:18px; margin-bottom:3px; }
 		
 		/* desc */
-		.item .content .desc { color:#aaa; font-size:12px; line-height:16px; }
+		.item .content .desc { color:#aaa; font-size:14px; line-height:16px; }
 
 /* -------------------------------------------------------------------------- */
 /* interaction */
@@ -491,9 +490,13 @@ section,
 /* -------------------------------------------------------------------------- */
 /* custom */
 
-/*related*/
+/* related */
 .item.related .title { margin-top:0; font-size:16px; line-height:34px; }
 .item.related .dateBlock { line-height:0.7em; }
+
+/* programmes | publications */
+.item.programmes .content .title,
+.item.publications .content .title { font-size:18px; line-height:20px; }
 
 
 /* ==========================================================================
@@ -651,7 +654,7 @@ section,
 /* notif */
 #pgHome .notif { 
 	display:block; position:absolute; left:0; bottom:0; width:100%; height:auto; max-height:75px; margin:0; padding:15px 20px 15px 60px; overflow:hidden;
-	font-size:10px; line-height:1.5em;
+	font-size:11px; line-height:1.2em;
 	/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 	
 	/* icon */
@@ -668,7 +671,7 @@ section,
 	/* text */
 	#pgHome .notif span		{ display:block; }
 	#pgHome .notif .label 	{ color:#656a73; }
-	#pgHome .notif .title 	{ color:#9b9ea4; min-height:1.5em; }
+	#pgHome .notif .title 	{ color:#9b9ea4; min-height:1.2em; }
 
 /* interaction */
 #pgHome .notif.active span,
@@ -904,8 +907,7 @@ section,
    DEBUG
    ========================================================================== */
 .debug { 
-	/*display:none!important;*/
-	display:block; position:absolute; top:0; left:0; margin:0;
+	display:none!important; position:absolute; top:0; left:0; margin:0;
 	color:#bbb; text-transform:uppercase; white-space:nowrap;
 	font-size:10px; line-height:1em; }
 
