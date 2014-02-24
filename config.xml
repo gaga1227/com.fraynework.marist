@@ -19,9 +19,9 @@
 	</author>
 	
 	<!-- Core APIs/Plugins -->
-	<gap:plugin name="org.apache.cordova.device" />
-	<gap:plugin name="org.apache.cordova.connection" />
-	<gap:plugin name="org.apache.cordova.alert" />
+	<gap:plugin name="org.apache.cordova.Device" />
+	<gap:plugin name="org.apache.cordova.NetworkManager" />
+	<gap:plugin name="org.apache.cordova.Notification" />
 	
 	<!-- Non-Core APIs/Plugins -->
 	
