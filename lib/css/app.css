@@ -422,6 +422,7 @@ section,
 	.group > :last-child 		{ /*background-clip*/-moz-background-clip:padding; -webkit-background-clip:padding; background-clip:padding-box; }
 	.group > :first-child 		{ /*border-radius*/-webkit-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0; }
 	.group > .item:last-child 	{ /*border-radius*/-webkit-border-radius:0 0 5px 5px; border-radius:0 0 5px 5px; border-bottom:2px solid #e5e5e5; }
+	.group > .item:only-child 	{ /*border-radius*/-webkit-border-radius:5px; border-radius:5px; }
 
 	/* groupHeader */
 	.groupHeader { 
@@ -433,7 +434,7 @@ section,
 		.groupHeader .m,
 		.groupHeader .y { display:block; max-width:45%; overflow:hidden; }
 		.groupHeader .m { float:left; }
-		.groupHeader .y { float:right; opacity:0.6; }
+		.groupHeader .y { float:right; opacity:0.8; }
 
 
 /* ==========================================================================
@@ -456,8 +457,8 @@ section,
 		
 		/* m */
 		.item .dateBlock .m { 
-			color:#b2b2b2; text-transform:uppercase;
-			font-size:11px; }
+			color:#888; text-transform:uppercase;
+			font-size:12px; }
 
 	/* -------------------------------------------------------------------------- */
 	/* icon */
@@ -468,18 +469,19 @@ section,
 	/* -------------------------------------------------------------------------- */
 	/* content */
 	.item .content {
-		width:auto; height:auto; min-height:34px; margin:14px 45px 14px 12px; padding:0; }
+		width:auto; height:auto; min-height:0; margin:14px 45px 14px 12px; padding:0; }
 	.item .dateBlock + .content { 
 		margin-left:55px; }
 	
 		/* common */
-		.item .content p { margin:0; overflow:hidden; /*white-space:nowrap; text-overflow:ellipsis;*/ }
+		.item .content p { margin:0; /* overflow:hidden; white-space:nowrap; text-overflow:ellipsis;*/ }
 
 		/* title */
 		.item .content .title { color:#333; font-size:16px; line-height:18px; margin-bottom:3px; }
+		.item .content .title:last-child { margin-bottom:0; }
 		
 		/* desc */
-		.item .content .desc { color:#aaa; font-size:14px; line-height:16px; }
+		.item .content .desc { color:#888; font-size:14px; line-height:16px; }
 
 /* -------------------------------------------------------------------------- */
 /* interaction */
@@ -491,8 +493,9 @@ section,
 /* custom */
 
 /* related */
-.item.related .title { margin-top:0; font-size:16px; line-height:34px; }
 .item.related .dateBlock { line-height:0.7em; }
+.item.related .content:before { content:''; display:inline-block; width:1px; min-height:34px; vertical-align:middle; }
+.item.related .content .title { display:inline-block; width:96%; margin-top:0; font-size:16px; line-height:18px; vertical-align:middle; }
 
 /* programmes | publications */
 .item.programmes .content .title,
@@ -598,8 +601,8 @@ section,
 	/* menuItem */
 	#pgHome .menuItem { 
 		display:block; position:absolute; top:0; width:50%; height:40%; margin:0; padding:0; overflow:hidden;
-		color:#fff!important; text-align:center;
-		text-decoration:none!important;
+		color:#fff!important; background-position:center bottom; background-repeat:repeat-x; 
+		text-align:center; text-decoration:none!important;
 		/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box;	}
 	
 	/* grid layout */
@@ -623,7 +626,7 @@ section,
 	
 		/* icon */
 		#pgHome .menuItem:before { 
-			display:block; position:absolute; top:50%; left:50%; margin:-30px 0 0 -20px; 
+			display:block; position:absolute; top:50%; left:50%; margin:-0.75em 0 0 -0.5em; 
 			font-size:40px; line-height:1em; }
 		#pgHome .menuItem.sml:before { 
 			display:inline-block; position:static; top:auto; left:auto; margin:0; 
@@ -638,8 +641,8 @@ section,
 		/* label */
 		#pgHome .menuItem .label { 
 			display:block; position:absolute; top:50%; left:0; width:100%; height:auto; margin:14px 0 0 0; 
-			opacity:0.6;
-			font-size:14px; line-height:1em; white-space:nowrap; text-overflow:ellipsis; }
+			opacity:0.8;
+			font-size:16px; line-height:1em; white-space:nowrap; text-overflow:ellipsis; }
 		#pgHome .menuItem.sml .label { 
 			display:inline-block; position:static; top:auto; left:auto; width:auto; margin:0 0 0 6px;
 			opacity:0.5; vertical-align:middle; }
@@ -653,7 +656,7 @@ section,
 /* -------------------------------------------------------------------------- */
 /* notif */
 #pgHome .notif { 
-	display:block; position:absolute; left:0; bottom:0; width:100%; height:auto; max-height:75px; margin:0; padding:15px 20px 15px 60px; overflow:hidden;
+	display:block; position:absolute; left:0; bottom:0; width:100%; height:auto; max-height:75px; margin:0 0 7px 0; padding:15px 20px 15px 60px; overflow:hidden;
 	font-size:11px; line-height:1.2em;
 	/*box-sizing*/-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing:border-box; }
 	
@@ -685,6 +688,133 @@ section,
 /* btnBack */
 #pgMenu .btnBack 		{ opacity:0.5; }
 #pgMenu .btnBack.active { opacity:1; }
+
+
+/* ==========================================================================
+   responsive - TABLET
+   ========================================================================== */
+@media only screen and (min-width:600px) and (min-height:800px) {
+
+/* -------------------------------------------------------------------------- */
+/* pageHeader */
+.pageHeader .headerTitle.small .secID 	{ font-size:24px; line-height:26px; }
+.pageHeader .headerTitle.small .cateID 	{ font-size:16px; line-height:21px; margin-bottom:0; }
+.pageHeader .headerTitle .secID .label i { width:1.5em; font-size:20px; }
+
+/* -------------------------------------------------------------------------- */
+/* pageContent */
+.brand + .pageHeader + .pageContent { top:30%; }
+
+/* -------------------------------------------------------------------------- */
+/* brand */
+.brand { height:30%; background-image:url(../img/img-brand-tablet.png); background-size:290px 163px; }
+
+/* -------------------------------------------------------------------------- */
+/* layout */
+
+/* padded box */
+.padded { padding:30px; }
+
+/* -------------------------------------------------------------------------- */
+/* content view */
+
+.contentView.article.padded { padding-right:20%; }
+
+/* headings */
+.contentView h1 			{ font-size:32px; }
+.contentView h2 			{ font-size:28px; }
+.contentView h3 			{ font-size:26px; }
+.contentView h4 			{ font-size:22px; }
+
+/* text */
+.contentView p 				{ font-size:20px; line-height:1.35em; }
+.contentView p.sml 			{ font-size:18px; line-height:1.35em; }
+
+/* list */
+.contentView li 			{ font-size:20px; line-height:1.35em; }
+.contentView ol,
+.contentView ul				{ padding:0 0 0 30px; }
+
+/* -------------------------------------------------------------------------- */
+/* summary view */
+
+/* headings */
+.summaryView .title,
+.summaryView .desc { margin-left:30px; margin-right:25%; font-size:45px; }
+.summaryView .title { margin-top:1em; }
+.summaryView .btmGap { margin-bottom:0.8em; }
+	
+	/* info */
+	.summaryView .info { padding:18px 30px 19px 80px; font-size:18px; }
+	
+		/* icon */
+		.summaryView .info .icon { top:14px; left:30px; font-size:32px; }
+
+/* -------------------------------------------------------------------------- */
+/* groups */
+.group { margin:20px; }
+.groupHeader { height:45px; padding:0 15px; font-size:20px; line-height:45px; }
+
+/* -------------------------------------------------------------------------- */
+/* item */
+
+/* dateBlock */
+.item .dateBlock { width:63px; height:34px; margin-top:-17px; font-size:30px; line-height:34px; }
+	
+	/* m */
+	.item .dateBlock .m { font-size:15px; }
+
+	/* icon */
+	.item .icon { right:20px; font-size:30px; }
+	
+	/* content */
+	.item .content { margin:20px 25% 20px 24px; }
+	.item .dateBlock + .content { margin-left:75px; }
+	
+		/* title */
+		.item .content .title { font-size:20px; line-height:22px; margin-bottom:6px; }
+		
+		/* desc */
+		.item .content .desc { font-size:16px; line-height:20px; }
+
+/* related */
+.item.related .dateBlock { line-height:0.6em; }
+.item.related .content .title { font-size:20px; line-height:22px; }
+
+/* programmes | publications */
+.item.programmes .content .title,
+.item.publications .content .title { font-size:20px; line-height:22px; }
+
+/* -------------------------------------------------------------------------- */
+/* menu */
+#pgHome .menu { top:30%; bottom:120px; left:6%; right:6%; }
+
+/* -------------------------------------------------------------------------- */
+/* menuItem */
+
+/* icon */
+#pgHome .menuItem:before				{ font-size:70px; }
+#pgHome .menuItem.sml:before 			{ font-size:38px; }
+#pgHome .menuItem.sml:last-child:before { font-size:45px; }
+
+/* label */
+#pgHome .menuItem .label { margin-top:0.8em; font-size:28px; }
+#pgHome .menuItem.sml .label { margin-left:16px; }
+
+/* notif */
+#pgHome .notif { 
+	max-height:100px; margin-bottom:14px; padding:25px 55px 25px 120px; 
+	font-size:18px; line-height:1.3em; }
+	
+	/* icon */
+	#pgHome .notif .icon { 
+		left:55px; width:48px; height:48px; margin-top:-24px; border-width:3px;
+		font-size:30px; line-height:1.2em; }
+		 
+	/* text */
+	#pgHome .notif .title 	{ min-height:1.3em; }
+
+}
 
 
 /* ==========================================================================
