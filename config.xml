@@ -19,11 +19,11 @@
 	</author>
 	
 	<!-- Core APIs/Plugins -->
-	<!-- List of core APIs: http://docs.phonegap.com/en/edge/guide_phonegap-build_index.md.html -->
-	<gap:plugin name="Device" 			value="org.apache.cordova.core.Device" />
-	<gap:plugin name="NetworkStatus" 	value="org.apache.cordova.core.NetworkManager" />
-	<gap:plugin name="Notification" 	value="org.apache.cordova.core.Notification" />
-	<gap:plugin name="InAppBrowser" 	value="org.apache.cordova.core.InAppBrowser" />
+	<!-- refer to: https://build.phonegap.com/plugins -->
+	<gap:plugin name="org.apache.cordova.device" />
+	<gap:plugin name="org.apache.cordova.dialogs" />
+	<gap:plugin name="org.apache.cordova.network-information" />
+	<gap:plugin name="org.apache.cordova.inappbrowser" />
 	
 	<!-- Non-Core APIs/Plugins -->
 	
