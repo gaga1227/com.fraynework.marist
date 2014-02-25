@@ -38,7 +38,7 @@
 	
 	<!-- Perfs: iOS -->
 	<preference name="target-device"				value="universal" />
-	<preference name="deployment-target" 			value="7.0" />				<!-- sets IPHONEOS_DEPLOYMENT_TARGET in ipa -->
+	<preference name="deployment-target" 			value="6.0" />				<!-- sets IPHONEOS_DEPLOYMENT_TARGET in ipa -->
 	<preference name="prerendered-icon" 			value="true" />				<!-- stop glossy effect to be added to icon -->
 	<preference name="detect-data-types" 			value="false" />			<!-- whether certain data types (e.g. phone, dates) are turned into links -->
 	<preference name="exit-on-suspend" 				value="false" />			<!-- app will terminate when suspended -->
