@@ -26,6 +26,8 @@
 	<gap:plugin name="org.apache.cordova.inappbrowser" />
 	
 	<!-- Non-Core APIs/Plugins -->
+	<gap:plugin name="com.phonegap.plugin.statusbar" />
+	<gap:plugin name="nl.x-services.plugins.ioswebviewcolor" />
 	
 	<!-- Platforms -->
 	<gap:platform name="ios" />
